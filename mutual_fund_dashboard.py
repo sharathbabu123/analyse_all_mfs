@@ -45,9 +45,9 @@ st.session_state.selected_fund_type = st.selectbox('Select Fund Type',  fund_typ
 
 # Filter the data based on the selected fund type
 if st.session_state.selected_fund_type == "All":
-    filtered_data = data
+    filtered_data = data.copy()
 else:
-    filtered_data = data[data['Fund Type'] == st.session_state.selected_fund_type]
+    filtered_data = data[data['Fund Type'] == st.session_state.selected_fund_type].copy()
 
 # Remove '%' and '-' signs from the Percentage Allocation column and convert it to float type
 filtered_data['Percentage Allocation'] = filtered_data['Percentage Allocation'].str.replace('%', '').str.replace('-', '0').astype(float)

@@ -1,4 +1,5 @@
 import datetime
+import os
 
 import pandas as pd
 import plotly.express as px
@@ -24,8 +25,12 @@ selected_day = st.sidebar.selectbox('Select Day', days,index=16)
 # Combine the selected year, month, and date into a single string
 selected_date = datetime.date(selected_year, selected_month, selected_day).strftime("%Y-%m-%d")
 
+current_directory = os.getcwd()
+print(current_directory)
+
+
 # Read the data from the CSV file
-data = pd.read_csv('daily_mf_data'+'\\'+'combined_'+selected_date+'.csv')
+data = pd.read_csv(current_directory+'\\'+'daily_mf_data'+'\\'+'combined_'+selected_date+'.csv')
 
 # Define the dropdown options
 fund_types = ['All'] + data['Fund Type'].unique().tolist()

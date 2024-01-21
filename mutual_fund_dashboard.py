@@ -32,22 +32,35 @@ print(current_directory)
 # Read the data from the CSV file
 data = pd.read_csv(os.path.join(current_directory, 'daily_mf_data', 'combined_' + selected_date + '.csv'))
 
-# Define the dropdown options
+# Define the dropdown options for fund type and asset type
 fund_types = ['All'] + data['Fund Type'].unique().tolist()
+asset_types = ['All'] + data['Asset Type'].unique().tolist()
 
+# Check if "selected_fund_type" and "selected_asset_type" are in session state, otherwise set them to "All"
 if "selected_fund_type" not in st.session_state:
     st.session_state["selected_fund_type"] = "All"
+if "selected_asset_type" not in st.session_state:
+    st.session_state["selected_asset_type"] = "All"
 
+# Check if the selected fund type and asset type are valid, otherwise set them to "All"
 if st.session_state["selected_fund_type"] not in fund_types:
     st.session_state["selected_fund_type"] = "All"
+if st.session_state["selected_asset_type"] not in asset_types:
+    st.session_state["selected_asset_type"] = "All"
 
-st.session_state.selected_fund_type = st.selectbox('Select Fund Type',  fund_types, index=fund_types.index(st.session_state.selected_fund_type))
+# Create dropdowns for fund type and asset type selection
+st.session_state.selected_fund_type = st.selectbox('Select Fund Type', fund_types, index=fund_types.index(st.session_state.selected_fund_type))
+st.session_state.selected_asset_type = st.selectbox('Select Asset Type', asset_types, index=asset_types.index(st.session_state.selected_asset_type))
 
-# Filter the data based on the selected fund type
-if st.session_state.selected_fund_type == "All":
+# Filter the data based on the selected fund type and asset type
+if st.session_state.selected_fund_type == "All" and st.session_state.selected_asset_type == "All":
     filtered_data = data.copy()
-else:
+elif st.session_state.selected_fund_type == "All":
+    filtered_data = data[data['Asset Type'] == st.session_state.selected_asset_type].copy()
+elif st.session_state.selected_asset_type == "All":
     filtered_data = data[data['Fund Type'] == st.session_state.selected_fund_type].copy()
+else:
+    filtered_data = data[(data['Fund Type'] == st.session_state.selected_fund_type) & (data['Asset Type'] == st.session_state.selected_asset_type)].copy()
 
 # Remove '%' and '-' signs from the Percentage Allocation column and convert it to float type
 filtered_data['Percentage Allocation'] = filtered_data['Percentage Allocation'].str.replace('%', '').str.replace('-', '0').astype(float)
@@ -57,12 +70,15 @@ sum_percentage_allocation = filtered_data.groupby('Company Name')['Percentage Al
 
 # Get the top 10 company names based on sum of Percentage Allocation
 top_10_company_names = sum_percentage_allocation.nlargest(10)
-st.write("Top 10 Company Names by Sum of Percentage Allocation:")
-st.write(top_10_company_names)
+
 
 # Get the top 10 stocks based on frequency of Company Name
 top_10_frequency = filtered_data['Company Name'].value_counts().nlargest(10)
-st.write(top_10_frequency)
+
+
+# Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation
+fig_sum = px.bar(x=top_10_company_names.index, y=top_10_company_names.values, title='Top 10 Stocks by Sum of Percentage Allocation')
+st.plotly_chart(fig_sum)
 
 # Create a bar chart to illustrate the top 10 stocks by frequency
 fig_frequency = px.bar(x=top_10_frequency.index, y=top_10_frequency.values, title='Top 10 Stocks by Frequency')

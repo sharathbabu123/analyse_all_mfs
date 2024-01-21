@@ -30,7 +30,7 @@ print(current_directory)
 
 
 # Read the data from the CSV file
-data = pd.read_csv(current_directory+'\\'+'daily_mf_data'+'\\'+'combined_'+selected_date+'.csv')
+data = pd.read_csv(os.path.join(current_directory, 'daily_mf_data', 'combined_' + selected_date + '.csv'))
 
 # Define the dropdown options
 fund_types = ['All'] + data['Fund Type'].unique().tolist()

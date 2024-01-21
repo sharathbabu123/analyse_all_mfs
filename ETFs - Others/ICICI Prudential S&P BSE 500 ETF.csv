@@ -1,0 +1,504 @@
+Company Name,Asset Type,Percentage Allocation
+HDFC Bank Ltd.,Equity,8.45%
+Reliance Industries Ltd.,Equity,5.81%
+ICICI Bank Ltd.,Equity,4.55%
+Infosys Ltd.,Equity,3.59%
+Larsen & Toubro Ltd.,Equity,2.78%
+ITC Ltd.,Equity,2.67%
+Tata Consultancy Services Ltd.,Equity,2.53%
+Triparty Repo,Others,2.17%
+Axis Bank Ltd.,Equity,2.04%
+Kotak Mahindra Bank Ltd.,Equity,1.78%
+Bharti Airtel Ltd.,Equity,1.70%
+State Bank Of India,Equity,1.61%
+Hindustan Unilever Ltd.,Equity,1.55%
+Bajaj Finance Ltd.,Equity,1.33%
+Mahindra & Mahindra Ltd.,Equity,1.08%
+HCL Technologies Ltd.,Equity,1.01%
+Titan Company Ltd.,Equity,1.00%
+Asian Paints Ltd.,Equity,1.00%
+National Thermal Power Corporation Ltd.,Equity,0.96%
+Tata Motors Ltd.,Equity,0.91%
+Maruti Suzuki India Ltd.,Equity,0.89%
+Sun Pharmaceuticals Ind Ltd.,Equity,0.89%
+Ultratech Cement Ltd.,Equity,0.79%
+Tata Steel Ltd.,Equity,0.73%
+Power Grid Corporation Of India Ltd.,Equity,0.71%
+Indusind Bank Ltd.,Equity,0.68%
+Adani Enterprises Ltd.,Equity,0.68%
+Nestle India Ltd.,Equity,0.62%
+Bajaj Finserv Ltd.,Equity,0.60%
+Hindalco Industries Ltd.,Equity,0.59%
+Coal India Ltd.,Equity,0.56%
+JSW Steel Ltd.,Equity,0.54%
+Grasim Industries Ltd.,Equity,0.52%
+Oil & Natural Gas Corporation Ltd.,Equity,0.52%
+Tech Mahindra Ltd.,Equity,0.52%
+Bajaj Auto Ltd.,Equity,0.50%
+Adani Ports and Special Economic Zone Ltd.,Equity,0.48%
+Dr Reddys Laboratories Ltd.,Equity,0.46%
+HDFC Life Insurance Company Ltd.,Equity,0.45%
+Trent Ltd.,Equity,0.45%
+Cipla Ltd.,Equity,0.44%
+Zomato Ltd.,Equity,0.44%
+Tata Consumer Products Ltd.,Equity,0.43%
+Wipro Ltd.,Equity,0.43%
+Bharat Electronics Ltd.,Equity,0.43%
+SBI Life Insurance Company Ltd.,Equity,0.42%
+Britannia Industries Ltd.,Equity,0.41%
+Avenue Supermarts Ltd.,Equity,0.40%
+Adani Green Energy Ltd.,Equity,0.40%
+Varun Beverages Ltd.,Equity,0.38%
+Eicher Motors Ltd.,Equity,0.38%
+Ltimindtree Ltd.,Equity,0.38%
+Apollo Hospitals Enterprise Ltd.,Equity,0.37%
+Shriram Finance Ltd.(Erstwhile Shriram Transport Finance Company Limited),Equity,0.37%
+Tata Power Company Ltd.,Equity,0.37%
+Power Finance Corporation Ltd.,Equity,0.36%
+Hero Motocorp Ltd.,Equity,0.35%
+Hindustan Aeronautics Ltd.,Equity,0.34%
+REC Ltd.,Equity,0.33%
+Cholamandalam Investment & Finance Company Ltd.,Equity,0.33%
+Max Healthcare Institute Ltd.,Equity,0.33%
+Divi Laboratories Ltd.,Equity,0.32%
+Indian Oil Corporation Ltd.,Equity,0.32%
+TVS Motor Company Ltd.,Equity,0.31%
+DLF Ltd.,Equity,0.29%
+GAIL (India) Ltd.,Equity,0.28%
+Bank Of Baroda,Equity,0.28%
+Bharat Petroleum Corporation Ltd.,Equity,0.28%
+Godrej Consumer Products Ltd.,Equity,0.28%
+Pidilite Industries Ltd.,Equity,0.27%
+Adani Power Ltd.,Equity,0.26%
+The Indian Hotels Company Ltd.,Equity,0.25%
+Suzlon Energy Ltd.,Equity,0.25%
+Coforge Ltd.,Equity,0.25%
+Ambuja Cements Ltd.,Equity,0.25%
+The Federal Bank Ltd.,Equity,0.25%
+Info Edge (India) Ltd.,Equity,0.25%
+Au Small Finance Bank Ltd.,Equity,0.25%
+Yes Bank Ltd.,Equity,0.25%
+Persistent Systems Ltd.,Equity,0.24%
+Adani Transmission Ltd.,Equity,0.24%
+Tube Investments Of India Ltd.,Equity,0.24%
+Interglobe Aviation Ltd.,Equity,0.24%
+SRF Ltd.,Equity,0.23%
+Siemens Ltd.,Equity,0.23%
+Havells India Ltd.,Equity,0.22%
+Colgate-Palmolive Ltd.,Equity,0.22%
+ICICI Lombard General Insurance Company Ltd.,Equity,0.22%
+United Spirits Ltd.,Equity,0.22%
+Bajaj Holdings & Investment Ltd.,Equity,0.22%
+Dabur India Ltd.,Equity,0.21%
+HDFC Asset Management Company Ltd.,Equity,0.21%
+Lupin Ltd.,Equity,0.21%
+Bharat Forge Ltd.,Equity,0.21%
+IDFC First Bank Ltd. (Erstwhile IDFC Bank Ltd.),Equity,0.20%
+MRF Ltd.,Equity,0.20%
+Vedanta Ltd.,Equity,0.20%
+Tata Elxsi Ltd.,Equity,0.20%
+Aurobindo Pharma Ltd.,Equity,0.20%
+UPL Ltd. (Erstwhile United Phosphorus Ltd.),Equity,0.20%
+The Supreme Industries Ltd.,Equity,0.19%
+APL Apollo Tubes Ltd.,Equity,0.19%
+Canara Bank,Equity,0.19%
+CG Power & Industrial Solutions Ltd.,Equity,0.19%
+Punjab National Bank,Equity,0.19%
+Marico Ltd.,Equity,0.18%
+Jindal Steel & Power Ltd.,Equity,0.18%
+PI Industries Ltd.,Equity,0.18%
+Shree Cement Ltd.,Equity,0.18%
+Adani Total Gas Ltd. (Erstwhile Adani Gas Ltd.),Equity,0.18%
+Indian Railway Catering & Tourism Corporation Ltd.,Equity,0.18%
+Cummins India Ltd.,Equity,0.17%
+Sona Blw Precision Forgings Ltd.,Equity,0.17%
+Zee Entertainment Enterprises Ltd.,Equity,0.17%
+PB Fintech Ltd.,Equity,0.17%
+Ashok Leyland Ltd.,Equity,0.17%
+Hindustan Petroleum Corporation Ltd.,Equity,0.17%
+Polycab India Ltd.,Equity,0.17%
+Bharat Heavy Electricals Ltd.,Equity,0.16%
+Macrotech Developers Ltd.,Equity,0.16%
+ABB India Ltd.,Equity,0.16%
+KPIT Technologies Ltd.,Equity,0.16%
+Tata Motors - DVR - A - ORDY,Equity,0.16%
+Samvardhana Motherson International Ltd. (Erstwhile Motherson Sumi Systems Ltd.),Equity,0.16%
+NMDC Ltd.,Equity,0.16%
+Container Corporation Of India Ltd.,Equity,0.15%
+Godrej Properties Ltd.,Equity,0.15%
+Mphasis Ltd.,Equity,0.15%
+Page Industries Ltd.,Equity,0.15%
+Voltas Ltd.,Equity,0.15%
+Astral Ltd. (Erstwhile Astral Poly Technik Ltd.),Equity,0.15%
+Max Financial Services Ltd.,Equity,0.15%
+SBI Cards & Payment Services Pvt. Ltd.,Equity,0.15%
+Fortis Healthcare Ltd.,Equity,0.14%
+Jubilant Foodworks Ltd.,Equity,0.14%
+The Phoenix Mills Ltd.,Equity,0.14%
+Torrent Pharmaceuticals Ltd.,Equity,0.14%
+Dixon Technologies (India) Ltd.,Equity,0.14%
+Balkrishna Industries Ltd.,Equity,0.14%
+ICICI Prudential Life Insurance Company Ltd.,Equity,0.14%
+Tata Communications Ltd.,Equity,0.13%
+Fsn ECommerce Ventures Ltd.,Equity,0.13%
+Union Bank Of India,Equity,0.13%
+GMR Airports Infrastructure Ltd.,Equity,0.13%
+Crompton Greaves Consumer Electrcials Ltd.,Equity,0.13%
+Jindal Stainless Ltd.,Equity,0.13%
+Cyient Ltd.,Equity,0.13%
+Dalmia Bharat Ltd.,Equity,0.12%
+Bosch Ltd.,Equity,0.12%
+Bandhan Bank Ltd.,Equity,0.12%
+KEI Industries Ltd.,Equity,0.12%
+Indian Railway Finance Corporation Ltd.,Equity,0.12%
+Alkem Laboratories Ltd.,Equity,0.12%
+Steel Authority Of India Ltd.,Equity,0.12%
+ACC Ltd.,Equity,0.12%
+Berger Paints India Ltd.,Equity,0.11%
+NHPC Ltd.,Equity,0.11%
+Tata Chemicals Ltd.,Equity,0.11%
+Zydus Lifesciences Ltd.,Equity,0.11%
+Deepak Nitrite Ltd.,Equity,0.11%
+One 97 Communications Ltd.,Equity,0.11%
+Laurus Labs Ltd.,Equity,0.11%
+JSW Energy Ltd.,Equity,0.11%
+Oberoi Realty Ltd.,Equity,0.11%
+IDFC Ltd.,Equity,0.11%
+Petronet Lng Ltd.,Equity,0.11%
+Indus Towers Ltd. (Erstwhile Bharti Infratel Limited),Equity,0.11%
+Delhivery Ltd.,Equity,0.11%
+Prestige Estates Projects Ltd.,Equity,0.11%
+Mahindra & Mahindra Financial Services Ltd.,Equity,0.11%
+Solar Industries India Ltd.,Equity,0.11%
+LIC Housing Finance Ltd.,Equity,0.11%
+Procter & Gamble Hygiene & Healthcare Ltd.,Equity,0.11%
+Muthoot Finance Ltd.,Equity,0.10%
+Life Insurance Corporation of India,Equity,0.10%
+Torrent Power Ltd.,Equity,0.10%
+Angel One Ltd. (Erstwhile Angel Broking Ltd.),Equity,0.10%
+IPCA Laboratories Ltd.,Equity,0.10%
+Coromandel International Ltd. (Coromandel Fertilisers Ltd.),Equity,0.10%
+Patanjali Foods Ltd.,Equity,0.10%
+Apollo Tyres Ltd.,Equity,0.10%
+Indian Bank,Equity,0.10%
+Indraprastha Gas Ltd.,Equity,0.10%
+Gujarat Fluorochemicals Ltd.,Equity,0.10%
+AIA Engineering Ltd.,Equity,0.10%
+Exide Industries Ltd.,Equity,0.10%
+L&T Technology Services Ltd.,Equity,0.09%
+RBL Bank Ltd.,Equity,0.09%
+L&T Finance Holding Ltd.,Equity,0.09%
+Multi Commodity Exchange of India Ltd.,Equity,0.09%
+Bank Of India,Equity,0.09%
+Navin Fluorine International Ltd.,Equity,0.09%
+Aditya Birla Capital Ltd.,Equity,0.09%
+Sundram Fasteners Ltd.,Equity,0.09%
+Oil India Ltd.,Equity,0.09%
+Radico Khaitan Ltd.,Equity,0.09%
+Gland Pharma Ltd.,Equity,0.09%
+360 ONE WAM LTD.(Erstwhile IIFL WEALTH MANAGEMENT LIMITED),Equity,0.09%
+The Ramco Cements Ltd.,Equity,0.09%
+Schaeffler India Ltd.,Equity,0.08%
+Aarti Industries Ltd.,Equity,0.08%
+J. K. Cement Ltd.,Equity,0.08%
+Poonawalla Fincorp Ltd. (Erstwhile Magma Fincorp Ltd.),Equity,0.08%
+Glenmark Pharmaceuticals Ltd.,Equity,0.08%
+Indian Energy Exchange Ltd.,Equity,0.08%
+Sonata Software Ltd.,Equity,0.08%
+Vodafone Idea Ltd.,Equity,0.08%
+Syngene International Ltd.,Equity,0.08%
+Carborundum Universal Ltd.,Equity,0.08%
+United Breweries Ltd.,Equity,0.08%
+Thermax Ltd.,Equity,0.08%
+IIFL Finance Ltd. (Erstwhile India Infoline Finance Limited),Equity,0.08%
+Abbott India Ltd.,Equity,0.08%
+Linde India Ltd.,Equity,0.08%
+National Aluminium Company Ltd.,Equity,0.08%
+Computer Age Management Services Ltd.,Equity,0.08%
+Equitas Small Finance Bank Ltd.,Equity,0.08%
+UNO Minda Ltd.,Equity,0.08%
+Piramal Enterprises Ltd.,Equity,0.08%
+Elgi Equipments Ltd.,Equity,0.08%
+Birlasoft Ltd.,Equity,0.08%
+Blue Star Ltd.,Equity,0.08%
+JB Chemicals & Pharmaceuticals Ltd.,Equity,0.08%
+PVR INOX Ltd.,Equity,0.08%
+Atul Ltd.,Equity,0.07%
+Brigade Enterprises Ltd.,Equity,0.07%
+Emami Ltd.,Equity,0.07%
+Biocon Ltd.,Equity,0.07%
+Kajaria Ceramics Ltd.,Equity,0.07%
+City Union Bank Ltd.,Equity,0.07%
+Grindwell Norton Ltd.,Equity,0.07%
+SKF India Ltd.,Equity,0.07%
+STAR HEALTH & ALLIED INSURANCE COMPANY Ltd.,Equity,0.07%
+Bata India Ltd.,Equity,0.07%
+Redington (India) Ltd.,Equity,0.07%
+CRISIL Ltd.,Equity,0.07%
+Motherson Sumi Wiring India Ltd.,Equity,0.07%
+3M India Ltd.,Equity,0.07%
+Timken India Ltd.,Equity,0.07%
+Rail Vikas Nigam Ltd.,Equity,0.07%
+Cholamandalam Financial Holdings Ltd.,Equity,0.06%
+Escorts Kubota Ltd.,Equity,0.06%
+Oracle Financial Services Software Ltd.,Equity,0.06%
+The Great Eastern Shipping Company Ltd.,Equity,0.06%
+Krishna Institute of Medical Sciences Ltd.,Equity,0.06%
+Manappuram Finance Ltd.,Equity,0.06%
+Dr Lal PathLabs Ltd.,Equity,0.06%
+Hindustan Copper Ltd.,Equity,0.06%
+Metro Brands Ltd.,Equity,0.06%
+Apar Industries Ltd.,Equity,0.06%
+Gujarat State Petronet Ltd.,Equity,0.06%
+Ratnamani Metals & Tubes Ltd.,Equity,0.06%
+Castrol India Ltd.,Equity,0.06%
+Ajanta Pharma Ltd.,Equity,0.06%
+Global Health Ltd.,Equity,0.06%
+CESC Ltd.,Equity,0.05%
+CreditAccess Grameen Ltd.,Equity,0.05%
+Lakshmi Machine Works Ltd.,Equity,0.05%
+Piramal Pharma Ltd.,Equity,0.05%
+Indiabulls Housing Finance Ltd.,Equity,0.05%
+Finolex Cables Ltd.,Equity,0.05%
+Indiamart Intermesh Ltd.,Equity,0.05%
+NCC Ltd.,Equity,0.05%
+Honeywell Automation India Ltd.,Equity,0.05%
+Narayana Hrudayalaya Ltd.,Equity,0.05%
+Amara Raja Batteries Ltd.,Equity,0.05%
+Hindustan Zinc Ltd.,Equity,0.05%
+Glaxo Smithkline Pharmaceuticals Ltd.,Equity,0.05%
+Kalyan Jewellers India Ltd.,Equity,0.05%
+Gujarat Gas Ltd.,Equity,0.05%
+Bharat Dynamics Ltd.,Equity,0.05%
+Tanla Platforms Ltd.,Equity,0.05%
+Vedant Fashions Pvt. Ltd.,Equity,0.05%
+Aditya Birla Fashion & Retail Ltd.,Equity,0.05%
+Tamilnad Mercantile Bank,Equity,0.05%
+General Insurance Corporation of India Ltd.,Equity,0.05%
+Five-Star Business Finance Ltd.,Equity,0.05%
+ZF Commercial Vehicle Control Systems India Ltd.,Equity,0.05%
+Intellect Design Arena Ltd.,Equity,0.05%
+Suven Pharmaceuticals Ltd.,Equity,0.05%
+Sanofi India Ltd.,Equity,0.05%
+KEC International Ltd.,Equity,0.05%
+Aavas Financiers Ltd. (Erstwhile A U Housing Finance),Equity,0.05%
+Nippon Life India Asset Management Ltd.,Equity,0.05%
+Natco Pharma Ltd.,Equity,0.05%
+Canfin Homes Ltd.,Equity,0.05%
+Bayer Cropscience Ltd.,Equity,0.05%
+Aster DM Healthcare Ltd.,Equity,0.05%
+Welspun Corporation Ltd.,Equity,0.05%
+Zensar Technologies Ltd.,Equity,0.05%
+K P R Mill Ltd.,Equity,0.05%
+Kaynes Technology India Pvt. Ltd.,Equity,0.05%
+Affle (India) Ltd.,Equity,0.05%
+Mazagon Dock Shipbuilders Ltd.,Equity,0.05%
+Gujarat Narmada Valley Fertilizers & Chemicals Ltd.,Equity,0.04%
+Praj Industries Ltd.,Equity,0.04%
+HFCL Ltd.,Equity,0.04%
+UTI Asset Management Company Ltd.,Equity,0.04%
+Endurance Technologies Ltd.,Equity,0.04%
+Kalpataru Projects International Ltd.,Equity,0.04%
+Mahanagar Gas Ltd.,Equity,0.04%
+Kansai Nerolac Paints Ltd.,Equity,0.04%
+Poly Medicure Ltd.,Equity,0.04%
+Lloyds Metals & Engineers Ltd.,Equity,0.04%
+Pfizer Ltd.,Equity,0.04%
+Century Textiles & Industries Ltd.,Equity,0.04%
+Jyothy Labs Ltd.,Equity,0.04%
+Relaxo Footwears Ltd.,Equity,0.04%
+Asahi India Glass Ltd.,Equity,0.04%
+Mankind Pharma Ltd.,Equity,0.04%
+Finolex Industries Ltd.,Equity,0.04%
+Aptus Value Housing Finance India Ltd.,Equity,0.04%
+Rainbow Childrens Medicare Ltd.,Equity,0.04%
+Chambal Fertilisers & Chemicals Ltd.,Equity,0.04%
+IRB Infrastructure Developers Ltd.,Equity,0.04%
+Triveni Turbine Ltd.,Equity,0.04%
+Sun T V Network Ltd.,Equity,0.04%
+NMDC Steel Ltd,Equity,0.04%
+Happiest Minds Technologies Ltd.,Equity,0.04%
+Raymond Ltd.,Equity,0.04%
+Hatsun Agro Product Ltd.,Equity,0.04%
+ICICI Securities Ltd.,Equity,0.04%
+Lemon Tree Hotels Ltd.,Equity,0.04%
+eClerx Services Ltd.,Equity,0.04%
+JK Lakshmi Cement Ltd.,Equity,0.04%
+First Source Solutions Ltd.,Equity,0.04%
+NLC India Ltd.,Equity,0.04%
+Tata Investment Corporation Ltd.,Equity,0.04%
+NBCC (India) Ltd.,Equity,0.04%
+Adani Wilmar Ltd.,Equity,0.04%
+Granules India Ltd.,Equity,0.04%
+Gujarat State Fertilizers & Chemicals Ltd.,Equity,0.04%
+Tejas Networks Ltd.,Equity,0.04%
+EIH Ltd.,Equity,0.04%
+Hitachi Energy India Ltd.,Equity,0.04%
+E.I.D. Parry India Ltd.,Equity,0.04%
+The New India Assurance Company Ltd.,Equity,0.03%
+Ceat Ltd.,Equity,0.03%
+Amber Enterprises India Ltd.,Equity,0.03%
+RHI Magnesita India Ltd.,Equity,0.03%
+DCM Shriram Ltd.,Equity,0.03%
+Craftsman Automation Ltd.,Equity,0.03%
+V-Guard Industries Ltd.,Equity,0.03%
+Sumitomo Chemical India Ltd.,Equity,0.03%
+Trident Ltd.,Equity,0.03%
+Sapphire Foods India Ltd.,Equity,0.03%
+Rajesh Exports Ltd.,Equity,0.03%
+Westlife Foodworld Ltd.,Equity,0.03%
+Cochin Shipyard Ltd.,Equity,0.03%
+Usha Martin Ltd.,Equity,0.03%
+Godrej Industries Ltd.,Equity,0.03%
+Capri Global Capital Ltd.,Equity,0.03%
+Jindal Saw Ltd.,Equity,0.03%
+Engineers India Ltd.,Equity,0.03%
+Balrampur Chini Mills Ltd.,Equity,0.03%
+Deepak Fertilizers & Petrochemicals Corporation Ltd.,Equity,0.03%
+Sheela Foam Ltd.,Equity,0.03%
+Tata Teleservices (Maharashtra) Ltd.,Equity,0.03%
+Vinati Organics Ltd.,Equity,0.03%
+SJVN Ltd.,Equity,0.03%
+Century Plyboards Ltd.,Equity,0.03%
+Aegis Logistics Ltd.,Equity,0.03%
+Housing & Urban Development Corporation Ltd. (Hudco),Equity,0.03%
+Ccl Products (India) Ltd.,Equity,0.03%
+Mastek Ltd.,Equity,0.03%
+Bank Of Maharashtra,Equity,0.03%
+PCBL Ltd. (Erstwhile Phillips Carbon Black Ltd.),Equity,0.03%
+Sterling & Wilson Renewable Energy Ltd. (Erstwhile Sterling & Wilson Solar Ltd.),Equity,0.03%
+GMM Pfaudler Ltd.,Equity,0.03%
+Motilal Oswal Financial Services Ltd.,Equity,0.03%
+Ircon International Ltd.,Equity,0.03%
+Alembic Pharmaceuticals Ltd.,Equity,0.03%
+Whirlpool of India Ltd.,Equity,0.03%
+Metropolis Healthcare Ltd.,Equity,0.03%
+Blue Dart Express Ltd.,Equity,0.03%
+Cera Sanitaryware Ltd.,Equity,0.03%
+Jubilant Pharmova Ltd.,Equity,0.03%
+Route Mobile Ltd.,Equity,0.03%
+VIP Industries Ltd.,Equity,0.03%
+Gujarat Pipavav Port Ltd.,Equity,0.03%
+J M Financial Ltd.,Equity,0.03%
+Mahindra Lifespace Developers Ltd.,Equity,0.03%
+Gillette India Ltd.,Equity,0.03%
+Clean Science & Technology Ltd.,Equity,0.03%
+Birla Corporation Ltd.,Equity,0.03%
+Maharashtra Scooters Ltd.,Equity,0.03%
+India Cements Ltd.,Equity,0.03%
+Data Patterns (India) Ltd.,Equity,0.03%
+Chalet Hotels Ltd.,Equity,0.03%
+Vardhman Textiles Ltd.,Equity,0.03%
+PNC Infratech Ltd.,Equity,0.03%
+Welspun India Ltd.,Equity,0.03%
+CIE Automotive India Ltd.,Equity,0.03%
+Jubilant Ingrevia Ltd.,Equity,0.03%
+PNB Housing Finance Ltd.,Equity,0.03%
+Nuvoco Vistas Corporation Ltd.,Equity,0.02%
+Procter & Gamble Health Ltd.,Equity,0.02%
+Graphite India Ltd.,Equity,0.02%
+Shree Renuka Sugars Ltd.,Equity,0.02%
+Fine Organic Industries Ltd.,Equity,0.02%
+BLS International Services Ltd.,Equity,0.02%
+Supreme Petrochem Ltd.,Equity,0.02%
+Swan Energy Ltd.,Equity,0.02%
+IDBI Bank Ltd.,Equity,0.02%
+Alkyl Amines Chemicals Ltd.,Equity,0.02%
+Eris Lifesciences Ltd.,Equity,0.02%
+Jupiter Wagons Ltd.,Equity,0.02%
+KSB Ltd.,Equity,0.02%
+Chemplast Sanmar Ltd.,Equity,0.02%
+Sobha Ltd.,Equity,0.02%
+KNR Constructions Ltd.,Equity,0.02%
+BASF India Ltd.,Equity,0.02%
+TV18 Broadcast Ltd.,Equity,0.02%
+Home First Finance Company India Ltd.,Equity,0.02%
+Bikaji Foods International Ltd.,Equity,0.02%
+CSB Bank Ltd. (Formerly The Catholic Syrian Bank Ltd.),Equity,0.02%
+RITES Ltd.,Equity,0.02%
+Astrazeneca Pharma India Ltd.,Equity,0.02%
+Archean Chemical Industries Ltd.,Equity,0.02%
+Indian Overseas Bank,Equity,0.02%
+Restaurant Brands Asia Ltd.,Equity,0.02%
+Quess Corp Ltd.,Equity,0.02%
+HEG Ltd.,Equity,0.02%
+Prince Pipes & Fittings Ltd.,Equity,0.02%
+Minda Corporation Ltd.,Equity,0.02%
+Garware Technical Fibres Ltd.,Equity,0.02%
+J K Paper Ltd.,Equity,0.02%
+TTK Prestige Ltd.,Equity,0.02%
+Central Bank Of India,Equity,0.02%
+Devyani International Ltd.,Equity,0.02%
+Gujarat Ambuja Exports Ltd.,Equity,0.02%
+Orient Electric Ltd.,Equity,0.02%
+Infibeam Avenues Ltd.,Equity,0.02%
+Caplin Point Laboratories Ltd.,Equity,0.02%
+Godfrey Phillips India Ltd.,Equity,0.02%
+Akzo Nobel India Ltd.,Equity,0.02%
+Rain Industries Ltd.,Equity,0.02%
+Ujjivan Small Finance Bank Ltd.,Equity,0.02%
+The Bombay Burmah Trading Corporation Ltd.,Equity,0.02%
+Galaxy Surfactants Ltd.,Equity,0.02%
+J B M Auto Ltd.,Equity,0.02%
+Balaji Amines Ltd.,Equity,0.02%
+Eureka Forbes Ltd.,Equity,0.02%
+Alok Industries Ltd.,Equity,0.02%
+EPL Ltd. (Erstwhile Essel Propack Ltd.),Equity,0.02%
+Sterlite Technologies Ltd.,Equity,0.02%
+Delta Corp Ltd.,Equity,0.02%
+Tata Coffee Ltd.,Equity,0.02%
+Godrej Agrovet Ltd.,Equity,0.02%
+Mangalore Refinery & Petrochemicals Ltd.,Equity,0.02%
+Medplus Health Services Ltd.,Equity,0.02%
+Mahindra Holidays & Resorts India Ltd.,Equity,0.02%
+Uco Bank,Equity,0.02%
+Ingersoll-Rand  Ltd.,Equity,0.02%
+Anupam Rasayan India Ltd.,Equity,0.02%
+C.E. Info Systems Ltd.,Equity,0.02%
+Zydus Wellness Ltd.,Equity,0.02%
+Esab India Ltd.,Equity,0.02%
+Prism Johnson Ltd.,Equity,0.02%
+Shoppers Stop Ltd.,Equity,0.01%
+Jamna Auto Industries Ltd.,Equity,0.01%
+Campus Activewear Ltd.,Equity,0.01%
+Kama Holdings Ltd.,Equity,0.01%
+G R Infraprojects Ltd.,Equity,0.01%
+Rashtriya Chemical & Fertilizer Ltd.,Equity,0.01%
+V-Mart Retail Ltd.,Equity,0.01%
+Borosil Renewables Ltd.,Equity,0.01%
+Vaibhav Global Ltd.,Equity,0.01%
+VST Industries Ltd.,Equity,0.01%
+Sunteck Realty Ltd.,Equity,0.01%
+Aether Industries Ltd.,Equity,0.01%
+Krbl Ltd.,Equity,0.01%
+Varroc Engineering Pvt. Ltd.,Equity,0.01%
+Laxmi Organic Industries Ltd.,Equity,0.01%
+Star Cement Ltd.,Equity,0.01%
+Latent View Analytics Ltd.,Equity,0.01%
+Sun Pharma Advanced Research Company Ltd.,Equity,0.01%
+Easy Trip Planners Ltd.,Equity,0.01%
+Mishra Dhatu Nigam Ltd.,Equity,0.01%
+FDC Ltd.,Equity,0.01%
+Nesco Ltd.,Equity,0.01%
+Shyam Metalics & Energy Ltd.,Equity,0.01%
+Sis Ltd. (Erstwhile Security & Intelligence Service (India) Ltd.),Equity,0.01%
+Just Dial Ltd.,Equity,0.01%
+Aditya Birla Sun Life Amc Ltd.,Equity,0.01%
+Network18 Media & Investments Ltd.,Equity,0.01%
+Avanti Feeds Ltd.,Equity,0.01%
+Gujarat Alkalies & Chemicals Ltd.,Equity,0.01%
+Aarti Drugs Ltd.,Equity,0.01%
+TCI Express Ltd.,Equity,0.01%
+Symphony Ltd.,Equity,0.01%
+Indigo Paints Ltd.,Equity,0.01%
+Rossari Biotech Ltd.,Equity,0.01%
+La Opala RG Ltd.,Equity,0.01%
+MAS Financial Services Ltd.,Equity,0.01%
+HLE Glascoat Ltd.,Equity,0.01%
+MMTC Ltd.,Equity,0.01%
+Jindal Worldwide Ltd.,Equity,0.01%
+Privi Speciality Chemicals Ltd.,Equity,0.01%
+ITI Ltd.,Equity,0.00%
+Punjab & Sind Bank,Equity,0.00%
+KIOCL Ltd.,Equity,0.00%
+Current Assets,Others,-2.17%

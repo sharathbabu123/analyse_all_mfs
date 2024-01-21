@@ -1,0 +1,506 @@
+Company Name,Asset Type,Percentage Allocation
+Apple Inc,Equity,6.97%
+Microsoft Corporation,Equity,6.92%
+Amazon Com Stk,Equity,3.42%
+Nvidia Corp,Equity,3.03%
+Alphabet Inc,Equity,2.05%
+Facebook,Equity,1.95%
+Alphabet Inc Class C,Equity,1.74%
+Tesla Motors Inc,Equity,1.70%
+Berkshire Hathway Inc.B,Equity,1.61%
+JP Morgan Chase & Co,Equity,1.22%
+Broadcom Corp,Equity,1.21%
+United Health Group Inc.,Equity,1.21%
+ELI Lilly Ord Shs,Equity,1.15%
+Visa Inc,Equity,1.03%
+Exxon Mobil Corporation Ltd.,Equity,0.99%
+Johnson & Johnson USA,Equity,0.93%
+Mastercard. Inc.,Equity,0.87%
+Home Depot Inc.,Equity,0.86%
+Procter & Gamble Company (USA),Equity,0.86%
+Costco Wholesale Corp,Equity,0.72%
+Merck & Company STK,Equity,0.68%
+AbbVie Inc.,Equity,0.68%
+Adobe Sys Inc,Equity,0.67%
+Cheveron Corp,Equity,0.65%
+Salesforce.Com,Equity,0.63%
+Advanced Micro Devices  (AMD) Inc.,Equity,0.59%
+Pepsico Inc.,Equity,0.58%
+Bank of America,Equity,0.57%
+Coca Cola Company,Equity,0.57%
+Wal-Mart Stores Inc.,Equity,0.56%
+Accenture Plc,Equity,0.55%
+Mc DonaldS Corporation,Equity,0.53%
+Netflix Inc,Equity,0.53%
+Intel Corp,Equity,0.52%
+Thermo Fisher Scientific Inc.,Equity,0.51%
+Cisco Systems Inc,Equity,0.51%
+CBLO(CCIL),Others,0.50%
+Linde PLC,Equity,0.49%
+Abbott India Ltd.,Equity,0.47%
+Wells Fargo ORD SHS,Equity,0.44%
+Comcast Corp - Class - A,Equity,0.44%
+Intuit Inc.,Equity,0.43%
+Oracle Corp,Equity,0.41%
+The Walt Disney Company,Equity,0.41%
+Pfizer Inc.,Equity,0.40%
+Qualcomm Inc Com,Equity,0.40%
+Verizon Communications Inc.,Equity,0.39%
+Texas Instrs INC Com,Equity,0.38%
+Amgen Inc,Equity,0.38%
+Danaher Corp,Equity,0.38%
+Caterpillar,Equity,0.37%
+Union Pacific Corp.,Equity,0.37%
+International Business Machines Corp.,Equity,0.37%
+Boeing Company,Equity,0.37%
+Philip Morris Intl Inc.,Equity,0.36%
+ServiceNow Inc.,Equity,0.36%
+S&P Global Inc.,Equity,0.35%
+General Electric Company,Equity,0.34%
+Honeywell International Inc.,Equity,0.34%
+ConocoPhillips,Equity,0.34%
+Applied Material Inc,Equity,0.34%
+Nike Inc.,Equity,0.33%
+Net Receivables/(Payable),Others,0.33%
+Lowe S Companies Inc,Equity,0.32%
+Uber Technologies  Inc.,Equity,0.31%
+Goldman Sachs Group Inc.,Equity,0.31%
+NextEra Energy Inc.,Equity,0.31%
+Booking Holdings Inc.,Equity,0.31%
+Prologis Inc.,Equity,0.31%
+Raytheon Technologies Corp,Equity,0.30%
+AT&T Inc.,Equity,0.30%
+Intuitive Surgical Inc,Equity,0.29%
+Morgan Stanley,Equity,0.29%
+United Parcel Services INC,Equity,0.28%
+BlackRock Inc.,Equity,0.28%
+Anthem Inc.,Equity,0.27%
+Starbucks Corp,Equity,0.27%
+Medtronic Plc.,Equity,0.27%
+American Express Company.,Equity,0.27%
+TJX Ord,Equity,0.27%
+Deere & Company Ltd.,Equity,0.27%
+Vertex Pharmaceuticals Inc,Equity,0.26%
+Bristol-Myers Squibb Company,Equity,0.26%
+Lam Research Corp,Equity,0.26%
+Charles Schwab Corp.,Equity,0.25%
+CVS Caremark Corp,Equity,0.25%
+Stryker Corp,Equity,0.25%
+Gilead Sciences Inc Com,Equity,0.25%
+American Tower Corp,Equity,0.25%
+Lockheed Martin Corp,Equity,0.25%
+Analog Devices,Equity,0.25%
+Mondelez International,Equity,0.24%
+Citigroup Inc.,Equity,0.24%
+Eaton Corp PLC,Equity,0.24%
+Automatic Data Processing Inc,Equity,0.24%
+Regeneron Pharmaceuticals Inc,Equity,0.23%
+Micron Technology Inc,Equity,0.23%
+Marsh & McLennan Cos Inc.,Equity,0.23%
+Progressive Corp,Equity,0.23%
+BLACKSTONE INC,Equity,0.23%
+Chubb Ltd.,Equity,0.23%
+Palo Alto Networks  Inc.,Equity,0.23%
+Zoetis Inc.,Equity,0.22%
+Cigna Corp,Equity,0.22%
+Boston Scientific Corp,Equity,0.21%
+T-Mobile US Inc.,Equity,0.20%
+Fiserv Inc,Equity,0.20%
+Kla-Tencor Corp,Equity,0.20%
+Synopsys Inc.,Equity,0.19%
+Southern Co/The,Equity,0.19%
+CME Group Inc.,Equity,0.19%
+Equinix,Equity,0.19%
+Duke Energy Corp,Equity,0.19%
+Schlumberger Ltd.,Equity,0.18%
+Cadence Design Systems  Inc.,Equity,0.18%
+Intercontinental Exchange.,Equity,0.18%
+Sherwin-Williams Co/The,Equity,0.18%
+Illinois Tool Works Inc.,Equity,0.18%
+Altria Group Inc,Equity,0.18%
+Becton Dickinson & Company,Equity,0.18%
+EOG Resources Inc,Equity,0.17%
+CSX Corp,Equity,0.17%
+US Bancorp Inc.,Equity,0.17%
+Northrop Grumman Company,Equity,0.16%
+Paypal Holdings Inc,Equity,0.16%
+Target Corp,Equity,0.16%
+Waste Management Inc.,Equity,0.16%
+Colgate-Palmolive Ltd.,Equity,0.16%
+Chipotle Mexican Grill Inc.,Equity,0.16%
+PNC Financial Services Group Inc.,Equity,0.15%
+McKesson Corp,Equity,0.15%
+Moodys Corp,Equity,0.15%
+Freeport Mcmoran Copper & Gold Inc.,Equity,0.15%
+Air Products & Chemicals Inc.,Equity,0.15%
+3M Company,Equity,0.15%
+Arista Networks Inc.,Equity,0.15%
+Amphenol Corp,Equity,0.15%
+NXP Semiconductors.,Equity,0.15%
+Parker-Hannifin Corp,Equity,0.15%
+Airbnb Inc.,Equity,0.15%
+Lululemon Athletica Inc,Equity,0.15%
+General Dynamics Corporation,Equity,0.15%
+Phillips 66,Equity,0.15%
+FedEx Corp,Equity,0.14%
+Roper Technologies Inc.,Equity,0.14%
+Aon plc,Equity,0.14%
+Humana Inc.,Equity,0.14%
+Marathon Petroleum Corp,Equity,0.14%
+Oreilly Auto,Equity,0.14%
+Transdigm Group Inc.,Equity,0.14%
+Trane Technologies Plc,Equity,0.14%
+Marriott International -Cl A,Equity,0.14%
+Emerson Electric ORD.,Equity,0.14%
+HCA Healthcare Inc.,Equity,0.13%
+Norfolk Southern Corp.,Equity,0.13%
+Pioneer Natural Resources Co,Equity,0.13%
+Cintas Corp,Equity,0.13%
+Autodesk Inc,Equity,0.13%
+Motorola Solutions Inc.,Equity,0.13%
+Paccar Inc,Equity,0.13%
+Ecolab Inc,Equity,0.12%
+Crown Castle International Corp,Equity,0.12%
+Capital One Financial Corp,Equity,0.12%
+Welltower Inc.,Equity,0.12%
+Truist Financial Corp,Equity,0.12%
+General Motors Co,Equity,0.12%
+Microchip Technology Inc,Equity,0.12%
+Arthur J Gallagher & Co,Equity,0.12%
+Public Storage,Equity,0.12%
+Carrier Global Corp,Equity,0.12%
+Dexcom Inc,Equity,0.12%
+Ford Motor Company,Equity,0.12%
+Newmont Mining Stk,Equity,0.12%
+American International Group Inc.,Equity,0.12%
+Sempra Energy,Equity,0.12%
+Ross Stores Inc,Equity,0.12%
+Hilton Worldwide Holdings Inc.,Equity,0.12%
+Simon Property Group Inc.,Equity,0.12%
+Edwards Lifesciences Corp,Equity,0.11%
+IDEXX Laboratories Inc.,Equity,0.11%
+DR Horton Inc.,Equity,0.11%
+AutoZone Inc.,Equity,0.11%
+MSCI Inc.,Equity,0.11%
+Valero Energy Corporation Ltd.,Equity,0.11%
+Aflac Inc,Equity,0.11%
+TE Connectivity Ltd.,Equity,0.11%
+Travelers Company Inc,Equity,0.11%
+Copart,Equity,0.11%
+Nucor Corp.,Equity,0.11%
+American Electric Power Co Inc.,Equity,0.11%
+Monster Beverage Corp,Equity,0.11%
+IQVIA Holdings Inc.,Equity,0.10%
+Williams Companies Inc.,Equity,0.10%
+Realty Inc.ome Corp,Equity,0.10%
+Metlife Inc.,Equity,0.10%
+Kimberly-Clark Corp,Equity,0.10%
+Oneok Inc,Equity,0.10%
+Digital Realty Trust Inc.,Equity,0.10%
+Agilent Technologies Inc.,Equity,0.10%
+Bank of New York Mellon Corp.,Equity,0.10%
+L3Harris Technologies Inc.,Equity,0.10%
+Hess Corporation,Equity,0.10%
+Centene Corp,Equity,0.10%
+Occidental Petroleum Corporation,Equity,0.10%
+Dominion Energy Inc.,Equity,0.10%
+Johnson Controls International PLC,Equity,0.10%
+Charter Communication-A,Equity,0.10%
+Constellation Brands Inc.,Equity,0.10%
+United Rentals Inc.,Equity,0.10%
+Archer Daniels Midland Company Ltd.,Equity,0.10%
+PG&E Corporation,Equity,0.10%
+Dow Inc.,Equity,0.10%
+Ameriprise Financial Inc.,Equity,0.10%
+Paychex Inc Com,Equity,0.09%
+AMETEK Inc.,Equity,0.09%
+Cognizant Technology Solutions Corp,Equity,0.09%
+General Mills Inc.,Equity,0.09%
+Biogen Idec Inc,Equity,0.09%
+Prudential Financial Inc.,Equity,0.09%
+Constellation Energy Corporation,Equity,0.09%
+Fortinet Inc.,Equity,0.09%
+Lennar Corp,Equity,0.09%
+Kenvue,Equity,0.09%
+Fastenal Co,Equity,0.09%
+Sysco Corp,Equity,0.09%
+Allstate Corp/The,Equity,0.09%
+Yum Brands Inc.,Equity,0.09%
+Otis Worldwide Corp,Equity,0.09%
+WW Grainger Inc.,Equity,0.09%
+Old Dominion Freight Line Inc.,Equity,0.09%
+ON Semiconductor Corp,Equity,0.09%
+Exelon Corp.,Equity,0.09%
+Costar Group,Equity,0.09%
+Rockwell Automation Inc.,Equity,0.09%
+Fidelity National Information Services I,Equity,0.09%
+PPG Industries Inc,Equity,0.09%
+Gartner Inc.,Equity,0.09%
+Verisk Analytics,Equity,0.09%
+Baker Hughes Co,Equity,0.09%
+Amerisource Bergen Corp.,Equity,0.08%
+Xcel Energy Inc.,Equity,0.08%
+Kinder Morgan Inc.,Equity,0.08%
+Estee Lauder Stk,Equity,0.08%
+Cummins Inc.,Equity,0.08%
+Extra Space Storage Inc.,Equity,0.08%
+Corteva Inc.,Equity,0.08%
+Republic Services Inc.,Equity,0.08%
+Keurig Dr Pepper,Equity,0.08%
+Electronic Arts Inc,Equity,0.08%
+DuPont de Nemours Inc.,Equity,0.08%
+Global Payments Inc.,Equity,0.08%
+Moderna Inc.,Equity,0.08%
+Vici Properties Inc,Equity,0.08%
+Halliburton Company,Equity,0.08%
+Ansys,Equity,0.08%
+Consolidated Edison Inc.,Equity,0.08%
+Quanta Services Inc.,Equity,0.08%
+Ingersoll-Rand  Ltd.,Equity,0.08%
+Martin Marietta Materials Inc.,Equity,0.08%
+Royal Caribbean Cruises Ltd.,Equity,0.08%
+Equifax Inc,Equity,0.08%
+Public Service Enterprise Group Inc.,Equity,0.08%
+Cdw Corporation,Equity,0.08%
+GE HealthCare Technologies Inc.,Equity,0.07%
+Kroger Co,Equity,0.07%
+Monolithic Power Systems Inc,Equity,0.07%
+Vulcan Materials Co,Equity,0.07%
+Dollar General Corporation,Equity,0.07%
+Dollar Tree Inc,Equity,0.07%
+Kraft Heinz Company,Equity,0.07%
+Devon Energy Corp,Equity,0.07%
+"Fair, Isaac and Company",Equity,0.07%
+CBRE Group Inc,Equity,0.07%
+Keysight Technologies Inc.,Equity,0.07%
+Discover Financial Services,Equity,0.07%
+Hershey Foods Corp.,Equity,0.07%
+Diamondback Energy Inc.,Equity,0.07%
+Arch Capital Group Ltd.,Equity,0.07%
+Xylem Inc./NY,Equity,0.07%
+Edison International,Equity,0.07%
+Sba Communications Corporation,Equity,0.07%
+AvalonBay Communities Inc.,Equity,0.07%
+WEC Energy Group Inc.,Equity,0.07%
+Mettler-Toledo International Inc.,Equity,0.07%
+HP Inc,Equity,0.06%
+West Pharmaceutical Services Inc.,Equity,0.06%
+Delta Air Lines Inc.,Equity,0.06%
+Fortive Corp.,Equity,0.06%
+American Water Works Co Inc,Equity,0.06%
+"Take-Two Interactive Software, Inc",Equity,0.06%
+Zimmer Biomet Holdings Inc.,Equity,0.06%
+Weyerhaeuser Co,Equity,0.06%
+Aptiv PLC,Equity,0.06%
+ResMed Inc.,Equity,0.06%
+Warner Bros Discovery Inc,Equity,0.06%
+Willis Towers Watson Plc.,Equity,0.06%
+Cardinal Health Stk,Equity,0.06%
+LyondellBasell Industries,Equity,0.06%
+Broadridge Financial Solutions Inc.,Equity,0.06%
+The Hartford Financial Services Group Inc.,Equity,0.06%
+Ulta Salon Cosmetics & Fragrance Inc.,Equity,0.06%
+T Rowe Price Group Inc,Equity,0.06%
+State Street Corp,Equity,0.06%
+Fifth Third Bancorp,Equity,0.06%
+Corning Inc.,Equity,0.06%
+Church & Dwight Co Inc.,Equity,0.06%
+Tractor Supply Company.,Equity,0.06%
+M&T Bank Corp,Equity,0.06%
+DTE Energy Co,Equity,0.06%
+Wabtec Corp.,Equity,0.06%
+Ebay Inc,Equity,0.06%
+PulteGroup Inc.,Equity,0.06%
+Illumina Inc,Equity,0.05%
+NVR Inc.,Equity,0.05%
+Hewlett Packard Enterprise Ltd.,Equity,0.05%
+Steris PLC,Equity,0.05%
+Eversource Energy,Equity,0.05%
+Dover Corp,Equity,0.05%
+Entergy Corp,Equity,0.05%
+Howmet Aerospace Inc.,Equity,0.05%
+Equity Residential,Equity,0.05%
+Molina Healthcare Inc.,Equity,0.05%
+Teledyne Technologies Inc,Equity,0.05%
+Raymond James Financial Inc.,Equity,0.05%
+PTC Inc.,Equity,0.05%
+International Flavors & Fragrances Inc.,Equity,0.05%
+Builders Firstsource Inc,Equity,0.05%
+Iron Mountain Inc.,Equity,0.05%
+FleetCor Technologies Inc.,Equity,0.05%
+Expedia Inc-W/I Com,Equity,0.05%
+Ventas Inc.,Equity,0.05%
+PPL Corp,Equity,0.05%
+Alexandria Real Estate Equities Inc.,Equity,0.05%
+Nasdaq Inc.,Equity,0.05%
+Darden Restaurants Inc.,Equity,0.05%
+Garmin Ltd.,Equity,0.05%
+Invitation Homes Inc,Equity,0.05%
+Baxter International Aktie,Equity,0.05%
+Align Technology,Equity,0.05%
+Water Corp ORD SHS.,Equity,0.05%
+Genuine Parts Co,Equity,0.05%
+Targa Resources Corp,Equity,0.05%
+Laboratory Corp Of America Holdings,Equity,0.05%
+Cabot Oil & Gas Corp,Equity,0.05%
+Ameren Corp,Equity,0.05%
+FirstEnergy Corp,Equity,0.05%
+Cboe Global Markets Inc.,Equity,0.05%
+Cooper Company Inc.,Equity,0.05%
+Walgreens Boots Alliance INC.,Equity,0.05%
+Carnival Corp,Equity,0.05%
+Expeditors Intl Wash Inc,Equity,0.05%
+Huntington Bancshares Inc.,Equity,0.05%
+First Solar Inc.,Equity,0.05%
+Netapp Inc,Equity,0.05%
+Verisign Inc,Equity,0.05%
+"Axon Enterprise, Inc.",Equity,0.05%
+Las Vegas Sands Corp,Equity,0.04%
+Ball Corporation,Equity,0.04%
+Factset Research System Inc,Equity,0.04%
+Enphase Energy Inc.,Equity,0.04%
+CenterPoint Energy Inc.,Equity,0.04%
+Veralto Corp,Equity,0.04%
+Regions Financial Corp,Equity,0.04%
+Steel Dynamics Inc,Equity,0.04%
+Skyworks Solutions Inc.,Equity,0.04%
+Akamai Technologies Stk,Equity,0.04%
+Clorox Company.,Equity,0.04%
+Hubbell Incorporated,Equity,0.04%
+Tyler Technologies INC.,Equity,0.04%
+Hologic Inc.,Equity,0.04%
+Northern Trust Corp,Equity,0.04%
+Principal Financial Group Inc.,Equity,0.04%
+Atmos Energy Corp,Equity,0.04%
+Southwest Airlines Co,Equity,0.04%
+McCormick & Co Inc.,Equity,0.04%
+Epam Systems Inc,Equity,0.04%
+Omnicom Group Inc.,Equity,0.04%
+Western Digital Corporation,Equity,0.04%
+Albemarle Corp,Equity,0.04%
+CMS Energy Corp,Equity,0.04%
+Brown & Brown Inc.,Equity,0.04%
+Seagate Technology Shs,Equity,0.04%
+Teradyne Inc,Equity,0.04%
+Idex Corporation,Equity,0.04%
+Jacobs Solutions Inc,Equity,0.04%
+JABIL INC,Equity,0.04%
+Avery Dennison Corp,Equity,0.04%
+JB Hunt Transport Services Inc,Equity,0.04%
+Cincinnati Financial Corp,Equity,0.04%
+Essex Property Trust Inc.,Equity,0.04%
+EQT Corporation,Equity,0.04%
+Synchrony Financial,Equity,0.04%
+Textron Inc.,Equity,0.04%
+Mid-America Apartment Communities Inc.,Equity,0.04%
+Lamb Weston Holdings Inc.,Equity,0.04%
+Celanese Corp,Equity,0.04%
+Quest Diagnostics Inc.,Equity,0.04%
+Citizens Financial Group Inc.,Equity,0.04%
+Poolcorp,Equity,0.04%
+Tyson Foods Inc,Equity,0.04%
+Everest Re Group Ltd.,Equity,0.04%
+Snap-on Inc.,Equity,0.04%
+CF Industries Holdings Inc,Equity,0.04%
+Best Buy Co Inc.,Equity,0.04%
+Insulet Corp,Equity,0.04%
+Stanley Black & Decker Inc.,Equity,0.04%
+Masco Corp,Equity,0.04%
+Leidos Holdings Inc.,Equity,0.04%
+Kellogg Company,Equity,0.04%
+Bunge Global SA,Equity,0.04%
+Packaging Corp of America,Equity,0.04%
+W. R. Berkley,Equity,0.04%
+Dominos Pizza Inc,Equity,0.04%
+Nordson Corporation,Equity,0.04%
+Marathon Oil Corp.,Equity,0.04%
+Zebra Technologies Corp,Equity,0.03%
+Amcor PLC,Equity,0.03%
+Host Hotels & Resorts Inc.,Equity,0.03%
+Conagra Brands Inc.,Equity,0.03%
+United Continental Holdings,Equity,0.03%
+PerkinElmer Inc.,Equity,0.03%
+KeyCorp,Equity,0.03%
+JM Smucker Co/The,Equity,0.03%
+Live Nation Entertainment Inc.,Equity,0.03%
+Trimble Inc,Equity,0.03%
+Kimco Realty Corp,Equity,0.03%
+Alliant Energy Corp,Equity,0.03%
+Viatris Inc,Equity,0.03%
+AES Corp/VA,Equity,0.03%
+NortonLifeLock Inc,Equity,0.03%
+LKQ Corp,Equity,0.03%
+Loews Corp,Equity,0.03%
+International Paper,Equity,0.03%
+Interpublic Group of Companies Inc.,Equity,0.03%
+Rollins Inc.,Equity,0.03%
+MGM Resorts International,Equity,0.03%
+Bio Techne Ord.,Equity,0.03%
+Carmax Inc.,Equity,0.03%
+Charles River Laboratories International Inc,Equity,0.03%
+Pentair Inc.,Equity,0.03%
+Evergy Inc.,Equity,0.03%
+Jack Henry & Associates Inc.,Equity,0.03%
+Teleflex Inc.,Equity,0.03%
+MOSAIC COMPANY Ltd.,Equity,0.03%
+Incyte Genomics Inc.,Equity,0.03%
+NRG Energy Inc.,Equity,0.03%
+UDR Inc.,Equity,0.03%
+Molson Coors Beverage Co,Equity,0.03%
+Allegion PLC.,Equity,0.03%
+MarketAxess Holdings Inc.,Equity,0.03%
+Apache Corp,Equity,0.03%
+Regency Centers Corp,Equity,0.03%
+NiSource Inc.,Equity,0.03%
+Qorvo Inc.,Equity,0.03%
+Healthpeak Properties Inc.,Equity,0.03%
+F5 Networks Inc,Equity,0.03%
+Westrock Co,Equity,0.03%
+EASTMAN CHEMICAL Company,Equity,0.03%
+Camden Property Trust,Equity,0.03%
+Ceridian HCM Holding Inc.,Equity,0.03%
+Brown-Forman Corp,Equity,0.03%
+Globe Life Inc.,Equity,0.03%
+Huntington Ingalls Industries Inc,Equity,0.03%
+Paycom Software Inc.,Equity,0.03%
+Boston Properties Inc.,Equity,0.03%
+AO Smith Corp,Equity,0.03%
+Caesars Entertainment Corporation,Equity,0.03%
+C.H. Robinson Worldwide Inc,Equity,0.02%
+Match Group Inc.,Equity,0.02%
+Henry Schein Inc,Equity,0.02%
+Bath & Body Works Inc,Equity,0.02%
+Etsy Inc.,Equity,0.02%
+Juniper Networks Inc.,Equity,0.02%
+News Corp Inc,Equity,0.02%
+Robert Half International Inc.,Equity,0.02%
+Universal Health Services Inc.,Equity,0.02%
+Hormel Foods Corp,Equity,0.02%
+American Airlines Group Inc.,Equity,0.02%
+Assurant Inc.,Equity,0.02%
+Wynn Resorts Ltd.,Equity,0.02%
+Norwegian Cruise Line Holdings Ltd.,Equity,0.02%
+Campbell Soup Company,Equity,0.02%
+Tapestry Inc.,Equity,0.02%
+BorgWarner Inc.,Equity,0.02%
+Franklin Resources,Equity,0.02%
+Pinnacle West Capital Corp,Equity,0.02%
+Catalent Inc.,Equity,0.02%
+Invesco Ltd.,Equity,0.02%
+Generac Holdings Inc.,Equity,0.02%
+FMC Corp.,Equity,0.02%
+Federal Realty Investment Trust,Equity,0.02%
+Dentsply Sirona Inc,Equity,0.02%
+Comerica Inc.,Equity,0.02%
+Fox Corporation Class A,Equity,0.02%
+ViacomCBS Inc.,Equity,0.02%
+Biorad Laboratories Inc. A,Equity,0.02%
+Whirlpool Corp,Equity,0.02%
+Hasbro Inc.,Equity,0.02%
+Zions Bancorp NA,Equity,0.02%
+VF Corporation,Equity,0.02%
+Ralph Lauren Corp,Equity,0.01%
+DaVita Inc.,Equity,0.01%
+Mohawk Industries Inc.,Equity,0.01%
+Fox Corporation Class B,Equity,0.01%
+News Corp Inc,Equity,0.01%

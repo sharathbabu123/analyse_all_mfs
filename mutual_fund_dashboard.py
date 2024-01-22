@@ -6,7 +6,7 @@ import plotly.express as px
 import streamlit as st
 
 current_date = str(datetime.date.today())
-print(current_date)
+# print(current_date)
 
 # Define the dropdown options for year, month, and date
 years = range(2000, datetime.date.today().year + 1)
@@ -15,22 +15,36 @@ days = range(1, 32)
 
 # Create the sidebar for date selection
 st.sidebar.title('Date Selection')
-selected_year = st.sidebar.selectbox('Select Year', years,index=len(years)-1)
-selected_month = st.sidebar.selectbox('Select Month', months,index=0)
-selected_day = st.sidebar.selectbox('Select Day', days,index=16)
 
-# Create a submit button
-# submit_button = st.sidebar.button('Submit')
+# Check if "selected_year", "selected_month", and "selected_day" are in session state, otherwise set them to default values
+if "selected_year" not in st.session_state:
+    st.session_state["selected_year"] = years[-1]
+if "selected_month" not in st.session_state:
+    st.session_state["selected_month"] = 1
+if "selected_day" not in st.session_state:
+    st.session_state["selected_day"] = 17
+
+selected_year = st.sidebar.selectbox('Select Year', years, index=years.index(st.session_state["selected_year"]))
+selected_month = st.sidebar.selectbox('Select Month', months, index=months.index(st.session_state["selected_month"]))
+selected_day = st.sidebar.selectbox('Select Day', days, index=days.index(st.session_state["selected_day"]))
+
+# # Rerun the page whenever a selectbox is chosen
+# st.rerun()
+
+# Update the session state with the selected year, month, and day
+st.session_state["selected_year"] = selected_year
+st.session_state["selected_month"] = selected_month
+st.session_state["selected_day"] = selected_day
 
 # Combine the selected year, month, and date into a single string
-selected_date = datetime.date(selected_year, selected_month, selected_day).strftime("%Y-%m-%d")
+selected_date = str(selected_year) + '-' + str(selected_month).zfill(2) + '-' + str(selected_day).zfill(2)
 
 current_directory = os.getcwd()
-print(current_directory)
+# print(current_directory)
 
-
+print("Date: "+selected_date)
 # Read the data from the CSV file
-data = pd.read_csv(os.path.join(current_directory, 'daily_mf_data', 'combined_' + selected_date + '.csv'))
+data = pd.read_csv(os.path.join(current_directory, 'daily_mf_data', 'combined_' + selected_date + '.csv'),on_bad_lines='skip')
 
 # Define the dropdown options for fund type and asset type
 fund_types = ['All'] + data['Fund Type'].unique().tolist()
@@ -49,8 +63,11 @@ if st.session_state["selected_asset_type"] not in asset_types:
     st.session_state["selected_asset_type"] = "All"
 
 # Create dropdowns for fund type and asset type selection
-st.session_state.selected_fund_type = st.selectbox('Select Fund Type', fund_types, index=fund_types.index(st.session_state.selected_fund_type))
-st.session_state.selected_asset_type = st.selectbox('Select Asset Type', asset_types, index=asset_types.index(st.session_state.selected_asset_type))
+st.session_state["selected_fund_type"] = st.selectbox('Select Fund Type', fund_types, index=fund_types.index(st.session_state["selected_fund_type"]))
+st.session_state["selected_asset_type"] = st.selectbox('Select Asset Type', asset_types, index=asset_types.index(st.session_state["selected_asset_type"]))
+
+# # Rerun the page whenever a selectbox is chosen
+# st.rerun()
 
 # Filter the data based on the selected fund type and asset type
 if st.session_state.selected_fund_type == "All" and st.session_state.selected_asset_type == "All":

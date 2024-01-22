@@ -81,13 +81,13 @@ if st.session_state.selected_fund_type == "All" and st.session_state.selected_as
     filtered_data_sector = data_sector.copy()
 elif st.session_state.selected_fund_type == "All":
     filtered_data = data[data['Asset Type'] == st.session_state.selected_asset_type].copy()
-    filtered_data_sector = data_sector[data_sector['Asset Type'] == st.session_state.selected_asset_type].copy()
+    filtered_data_sector = data_sector.copy()
 elif st.session_state.selected_asset_type == "All":
     filtered_data = data[data['Fund Type'] == st.session_state.selected_fund_type].copy()
     filtered_data_sector = data_sector[data_sector['Fund Type'] == st.session_state.selected_fund_type].copy()
 else:
     filtered_data = data[(data['Fund Type'] == st.session_state.selected_fund_type) & (data['Asset Type'] == st.session_state.selected_asset_type)].copy()
-    filtered_data_sector = data_sector[(data_sector['Fund Type'] == st.session_state.selected_fund_type) & (data_sector['Asset Type'] == st.session_state.selected_asset_type)].copy()
+    filtered_data_sector = data_sector[(data_sector['Fund Type'] == st.session_state.selected_fund_type)].copy()
 
 # Remove '%' and '-' signs from the Percentage Allocation column and convert it to float type
 filtered_data['Percentage Allocation'] = filtered_data['Percentage Allocation'].str.replace('%', '').str.replace('-', '0').astype(float)

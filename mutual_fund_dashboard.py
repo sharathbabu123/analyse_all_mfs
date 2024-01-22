@@ -47,7 +47,7 @@ selected_date = str(selected_year) + '-' + str(selected_month).zfill(2) + '-' + 
 current_directory = os.getcwd()
 # print(current_directory)
 
-print("Date: "+selected_date)
+# print("Date: "+selected_date)
 # Read the data from the CSV file
 data = pd.read_csv(os.path.join(current_directory, 'daily_mf_data','TOP_HOLDING', 'combined_portfolio_' + selected_date + '.csv'),on_bad_lines='skip')
 data_sector = pd.read_csv(os.path.join(current_directory, 'daily_mf_data','TOP_SECTOR_HOLDING', 'combined_sector_' + selected_date + '.csv'),on_bad_lines='skip')
@@ -97,16 +97,19 @@ filtered_data_sector['Percentage Allocation'] = filtered_data_sector['Percentage
 sum_percentage_allocation = filtered_data.groupby('Company Name')['Percentage Allocation'].sum()
 sum_percentage_allocation_sector = filtered_data_sector.groupby('Sector Name')['Percentage Allocation'].sum()
 
+n = st.sidebar.slider('Select the value of n', 5, 30, 10, step=5)
 # Get the top 10 company names based on sum of Percentage Allocation
-top_10_company_names = sum_percentage_allocation.nlargest(10)
+top_10_company_names = sum_percentage_allocation.nlargest(n)
 top_10_sector_names = sum_percentage_allocation_sector.nlargest(10)
 
 # Get the top 10 stocks based on frequency of Company Name
-top_10_frequency = filtered_data['Company Name'].value_counts().nlargest(10)
+top_10_frequency = filtered_data['Company Name'].value_counts().nlargest(n)
 
 
 # Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation
 fig_sum = px.bar(x=top_10_sector_names.index, y=top_10_sector_names.values, title='Top 10 Sector by Sum of Percentage Allocation')
+
+
 st.plotly_chart(fig_sum)
 
 # Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation

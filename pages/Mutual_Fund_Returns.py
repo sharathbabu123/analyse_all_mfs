@@ -22,7 +22,7 @@ def get_latest_nav(df_data, date):
 
 # Initialize mftool
 mf = Mftool()
-
+st.title('Mutual Fund Returns')
 
 df = pd.read_csv('scheme_details_with_scheme_type.csv')
 

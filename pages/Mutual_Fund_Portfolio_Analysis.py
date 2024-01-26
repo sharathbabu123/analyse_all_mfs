@@ -6,7 +6,7 @@ import plotly.express as px
 import streamlit as st
 
 # Set the title of the Streamlit dashboard
-st.title('Mutual Fund Dashboard')
+st.title('Mutual Fund Portfolio Analysis')
 
 
 

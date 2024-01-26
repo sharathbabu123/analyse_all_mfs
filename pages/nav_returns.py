@@ -24,14 +24,16 @@ def get_latest_nav(df_data, date):
 mf = Mftool()
 
 
-df = pd.read_csv('scheme_details.csv')
+df = pd.read_csv('scheme_details_with_scheme_type.csv')
 
 import streamlit as st
 
+scheme_types = df['scheme_type'].unique()
+
+selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', scheme_types)
 # Filter options
 # scheme_types = df['scheme_type'].unique()
-scheme_categories = df['scheme_category'].unique()
-
+scheme_categories = df[df['scheme_type']==selected_scheme_type]['scheme_category'].unique()
 # # Sidebar filters
 # selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', scheme_types)
 selected_scheme_category = st.sidebar.selectbox('Select Scheme Category', scheme_categories)
@@ -48,13 +50,13 @@ submit_button = st.sidebar.button('Submit')
 
 
 # Filtered DataFrame
-filtered_df = df[ (df['scheme_category'] == selected_scheme_category)]
+# filtered_df = df[ (df['scheme_category'] == selected_scheme_category)]
 
 
 # Filtered DataFrame
 filtered_df = df[(df['scheme_category'] == selected_scheme_category) & 
                  (df['scheme_name'].str.contains('Direct')) & 
-                 (df['scheme_name'].str.contains('Growth'))]
+                 (df['scheme_name'].str.contains('Growth')) & (df['scheme_type']==selected_scheme_type)]
 
 
 

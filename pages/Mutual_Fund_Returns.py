@@ -28,7 +28,8 @@ df = pd.read_csv('scheme_details_with_scheme_type.csv')
 
 import streamlit as st
 
-st.title('Mutual Fund Returns')
+# Add a page icon
+st.title('📄 Mutual Fund Returns')
 scheme_types = df['scheme_type'].unique()
 
 selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', scheme_types)

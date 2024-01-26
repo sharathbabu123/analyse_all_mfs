@@ -45,6 +45,8 @@ st.session_state["selected_day"] = selected_day
 selected_date = str(selected_year) + '-' + str(selected_month).zfill(2) + '-' + str(selected_day).zfill(2)
 
 current_directory = os.getcwd()
+# current_directory = os.path.dirname(os.path.dirname(os.getcwd()))
+
 # print(current_directory)
 
 # print("Date: "+selected_date)

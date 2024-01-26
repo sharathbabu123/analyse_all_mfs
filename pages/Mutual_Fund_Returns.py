@@ -151,7 +151,9 @@ if submit_button:
 
     # ...
 
-    filtered_df.sort_values(by='cagr_3_year', ascending=False, inplace=True)
+    
+
+    filtered_df.sort_values(by=sort_factor, ascending=False, inplace=True)
     top_10 = filtered_df.head(10)
     st.write(top_10[['scheme_name', 'cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year']])
     # st.write(top_10)

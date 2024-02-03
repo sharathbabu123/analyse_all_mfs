@@ -11,13 +11,20 @@ import streamlit as st
 
 st.title('📊 Mutual Fund Portfolio Analysis')
 
+# Create a box to display a value
+# Create three square boxes
+col1, col2,col3 = st.columns(3)
+
+
+
+
 current_directory = os.getcwd()
 
 # Find the files in the folder "TOP_HOLDING" and sort them
 files = sorted(os.listdir(os.path.join(current_directory, 'daily_mf_data', 'TOP_HOLDING')))
 
 # Select the last file
-last_file = files[-1]
+last_file = files[-2]
 
 # Save it as a variable as a string
 selected_file = last_file.split('_')[-1].split('.')[0]
@@ -80,33 +87,58 @@ if st.session_state.selected_scheme_name != "All":
     filtered_data = filtered_data[filtered_data['Scheme Name'] == st.session_state.selected_scheme_name]
     filtered_data_sector = filtered_data_sector[filtered_data_sector['Scheme Name'] == st.session_state.selected_scheme_name]
 
+unique_fund_types = filtered_data['Fund Type'].nunique() 
+col1.metric("Total Number of Fund Types", unique_fund_types )
+
+
+unique_scheme_names = filtered_data['Scheme Name'].nunique()
+print(filtered_data['Scheme Name'])
+col2.metric("Total Number of Schemes", unique_scheme_names)
+
+unique_company_names = filtered_data['Company Name'].nunique()
+col3.metric("Total Number of Stocks", unique_company_names)
+
 # Remove '%' and '-' signs from the Percentage Allocation column and convert it to float type
 filtered_data['Percentage Allocation'] = filtered_data['Percentage Allocation'].str.replace('%', '').str.replace('-', '0').astype(float)
 filtered_data_sector['Percentage Allocation'] = filtered_data_sector['Percentage Allocation'].str.replace('%', '').str.replace('-', '0').astype(float)
 
 # Calculate the sum of the Percentage Allocation column
 sum_percentage_allocation = filtered_data.groupby('Company Name')['Percentage Allocation'].sum()
+# print(type(sum_percentage_allocation))
 sum_percentage_allocation_sector = filtered_data_sector.groupby('Sector Name')['Percentage Allocation'].sum()
 
 n = st.sidebar.slider('Select the value of n', 5, 30, 10, step=5)
+
+visualization_type = st.sidebar.radio('Select Visualization Type', ['List', 'Bar Chart'])
+
 # Get the top 10 company names based on sum of Percentage Allocation
 top_10_company_names = sum_percentage_allocation.nlargest(n)
+# print(type(top_10_company_names))
 top_10_sector_names = sum_percentage_allocation_sector.nlargest(10)
 
 # Get the top 10 stocks based on frequency of Company Name
 top_10_frequency = filtered_data['Company Name'].value_counts().nlargest(n)
 
+if visualization_type == 'List':
+    st.write('**Top 10 Sector by Sum of Percentage Allocation**')
+    st.write(top_10_sector_names)
 
-# Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation
-fig_sum = px.bar(x=top_10_sector_names.index, y=top_10_sector_names.values, title='Top 10 Sector by Sum of Percentage Allocation')
+    st.write('**Top 10 Stocks by Sum of Percentage Allocation**')
+    st.write(top_10_company_names)
+    
+    st.write('**Top 10 Stocks by Frequency**')
+    st.write(top_10_frequency)
+else:
+    # Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation
+    fig_sum = px.bar(x=top_10_sector_names.index, y=top_10_sector_names.values, title='Top 10 Sector by Sum of Percentage Allocation')
 
 
-st.plotly_chart(fig_sum)
+    st.plotly_chart(fig_sum)
 
-# Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation
-fig_sum = px.bar(x=top_10_company_names.index, y=top_10_company_names.values, title='Top 10 Stocks by Sum of Percentage Allocation')
-st.plotly_chart(fig_sum)
+    # Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation
+    fig_sum = px.bar(x=top_10_company_names.index, y=top_10_company_names.values, title='Top 10 Stocks by Sum of Percentage Allocation')
+    st.plotly_chart(fig_sum)
 
-# Create a bar chart to illustrate the top 10 stocks by frequency
-fig_frequency = px.bar(x=top_10_frequency.index, y=top_10_frequency.values, title='Top 10 Stocks by Frequency')
-st.plotly_chart(fig_frequency)
+    # Create a bar chart to illustrate the top 10 stocks by frequency
+    fig_frequency = px.bar(x=top_10_frequency.index, y=top_10_frequency.values, title='Top 10 Stocks by Frequency')
+    st.plotly_chart(fig_frequency)

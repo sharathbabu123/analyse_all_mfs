@@ -73,7 +73,7 @@ with open(combined_file_path_portfolio, 'r') as combined_file:
     existing_content = combined_file.read()
 
 # Append the header row to the existing content
-header_row = ['Company Name', 'Asset Type', 'Percentage Allocation','Portfolio Date', 'Fund Type', 'Scheme Name']
+header_row = ['Company Name', 'Asset Type', 'Percentage Allocation','Portfolio Date',  'Scheme Name','Fund Type']
 header_row_str = ','.join(header_row) + '\n'
 new_content = header_row_str + existing_content
 
@@ -128,7 +128,7 @@ with open(combined_file_path_sector_holding, 'r') as combined_file:
     existing_content = combined_file.read()
 
 # Append the header row to the existing content
-header_row = ['Sector Name', 'Dummy', 'Percentage Allocation', 'Fund Type', 'Scheme Name']
+header_row = ['Sector Name', 'Dummy', 'Percentage Allocation', 'Scheme Name','Fund Type']
 header_row_str = ','.join(header_row) + '\n'
 new_content = header_row_str + existing_content
 

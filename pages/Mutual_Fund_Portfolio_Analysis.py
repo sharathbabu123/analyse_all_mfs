@@ -4,6 +4,7 @@ import os
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from streamlit_elements import elements, html, mui
 
 # Set the title of the Streamlit dashboard
 # Set the page icon
@@ -92,7 +93,7 @@ col1.metric("Total Number of Fund Types", unique_fund_types )
 
 
 unique_scheme_names = filtered_data['Scheme Name'].nunique()
-print(filtered_data['Scheme Name'])
+# print(filtered_data['Scheme Name'])
 col2.metric("Total Number of Schemes", unique_scheme_names)
 
 unique_company_names = filtered_data['Company Name'].nunique()
@@ -111,34 +112,54 @@ n = st.sidebar.slider('Select the value of n', 5, 30, 10, step=5)
 
 visualization_type = st.sidebar.radio('Select Visualization Type', ['List', 'Bar Chart'])
 
-# Get the top 10 company names based on sum of Percentage Allocation
-top_10_company_names = sum_percentage_allocation.nlargest(n)
-# print(type(top_10_company_names))
-top_10_sector_names = sum_percentage_allocation_sector.nlargest(10)
+submit = st.sidebar.button('Submit')
 
-# Get the top 10 stocks based on frequency of Company Name
-top_10_frequency = filtered_data['Company Name'].value_counts().nlargest(n)
+import time
 
-if visualization_type == 'List':
-    st.write('**Top 10 Sector by Sum of Percentage Allocation**')
-    st.write(top_10_sector_names)
+if submit:
 
-    st.write('**Top 10 Stocks by Sum of Percentage Allocation**')
-    st.write(top_10_company_names)
+
+    progress_text = "Operation in progress. Please wait."
+    my_bar = st.progress(0, text=progress_text)
+
+    for percent_complete in range(100):
+        time.sleep(0.01)
+        my_bar.progress(percent_complete + 1, text=progress_text)
+
+    time.sleep(1)
+    my_bar.empty()
+
+    # Get the top 10 company names based on sum of Percentage Allocation
+    top_10_company_names = sum_percentage_allocation.nlargest(n)
+    # print(type(top_10_company_names))
+    top_10_sector_names = sum_percentage_allocation_sector.nlargest(10)
+
+    # Get the top 10 stocks based on frequency of Company Name
+    top_10_frequency = filtered_data['Company Name'].value_counts().nlargest(n)
+
+    # list1, list2,list3 = st.columns(3)
     
-    st.write('**Top 10 Stocks by Frequency**')
-    st.write(top_10_frequency)
-else:
-    # Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation
-    fig_sum = px.bar(x=top_10_sector_names.index, y=top_10_sector_names.values, title='Top 10 Sector by Sum of Percentage Allocation')
+
+    if visualization_type == 'List':
+        st.write('**Top 10 Sector by Sum of Percentage Allocation**')
+        st.table(top_10_sector_names)
+
+        st.write('**Top 10 Stocks by Sum of Percentage Allocation**')
+        st.table(top_10_company_names)
+        
+        st.write('**Top 10 Stocks by Frequency**')
+        st.table(top_10_frequency)
+    else:
+        # Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation
+        fig_sum = px.bar(x=top_10_sector_names.index, y=top_10_sector_names.values, title='Top 10 Sector by Sum of Percentage Allocation')
 
 
-    st.plotly_chart(fig_sum)
+        st.plotly_chart(fig_sum)
 
-    # Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation
-    fig_sum = px.bar(x=top_10_company_names.index, y=top_10_company_names.values, title='Top 10 Stocks by Sum of Percentage Allocation')
-    st.plotly_chart(fig_sum)
+        # Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation
+        fig_sum = px.bar(x=top_10_company_names.index, y=top_10_company_names.values, title='Top 10 Stocks by Sum of Percentage Allocation')
+        st.plotly_chart(fig_sum)
 
-    # Create a bar chart to illustrate the top 10 stocks by frequency
-    fig_frequency = px.bar(x=top_10_frequency.index, y=top_10_frequency.values, title='Top 10 Stocks by Frequency')
-    st.plotly_chart(fig_frequency)
+        # Create a bar chart to illustrate the top 10 stocks by frequency
+        fig_frequency = px.bar(x=top_10_frequency.index, y=top_10_frequency.values, title='Top 10 Stocks by Frequency')
+        st.plotly_chart(fig_frequency)

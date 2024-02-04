@@ -143,7 +143,7 @@ if submit:
     index = pd.Index(range(1, len(top_10_company_names_df)+1))
     top_10_company_names_df.index = index
 
-    print(top_10_company_names_df)
+    # print(top_10_company_names_df)
     
     # print(type(top_10_company_names))
     top_10_sector_names = sum_percentage_allocation_sector.nlargest(10)
@@ -151,7 +151,7 @@ if submit:
     top_10_sector_names.columns = ['Sector Name', 'Percentage Allocation']
     index = pd.Index(range(1, len(top_10_sector_names)+1))
     top_10_sector_names.index = index
-    print(top_10_sector_names)
+    # print(top_10_sector_names)
 
     # Get the top 10 stocks based on frequency of Company Name
     top_10_frequency = filtered_data['Company Name'].value_counts().nlargest(n)
@@ -159,7 +159,7 @@ if submit:
     top_10_frequency.columns = ['Company Name', 'Number of Mutual Funds holding the Stock']
     index = pd.Index(range(1, len(top_10_frequency)+1))
     top_10_frequency.index = index
-    print(top_10_frequency)
+    # print(top_10_frequency)
 
     # list1, list2,list3 = st.columns(3)
     
@@ -168,11 +168,11 @@ if submit:
         st.write('**Top 10 Sector by Sum of Percentage Allocation**')
         st.table(top_10_sector_names)
 
-        st.write('**Top 10 Stocks by Sum of Percentage Allocation**')
+        st.write(f'**Top {n} Stocks by Sum of Percentage Allocation**')
         st.table(top_10_company_names_df)
 
         
-        st.write('**Top 10 Stocks by Frequency**')
+        st.write(f'**Top {n} Stocks by Frequency**')
         st.table(top_10_frequency)
     else:
         # Create a bar chart to illustrate the top 10 stocks by sum of percentage allocation

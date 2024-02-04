@@ -24,7 +24,7 @@ current_directory = os.getcwd()
 files = sorted(os.listdir(os.path.join(current_directory, 'daily_mf_data', 'TOP_HOLDING')))
 
 # Select the last file
-last_file = files[-2]
+last_file = files[-1]
 
 # Save it as a variable as a string
 selected_file = last_file.split('_')[-1].split('.')[0]

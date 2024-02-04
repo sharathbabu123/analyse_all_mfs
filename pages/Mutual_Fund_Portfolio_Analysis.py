@@ -6,8 +6,15 @@ import plotly.express as px
 import streamlit as st
 from streamlit_elements import elements, html, mui
 
+
 # Set the title of the Streamlit dashboard
 # Set the page icon
+def highlight_max(s):
+    '''
+    highlight the maximum in a Series yellow.
+    '''
+    is_max = s == s.max()
+    return ['background-color: yellow' if v else '' for v in is_max]
 
 
 st.title('📊 Mutual Fund Portfolio Analysis')
@@ -131,11 +138,28 @@ if submit:
 
     # Get the top 10 company names based on sum of Percentage Allocation
     top_10_company_names = sum_percentage_allocation.nlargest(n)
+    top_10_company_names_df = pd.DataFrame(top_10_company_names).reset_index()
+    top_10_company_names_df.columns = ['Company Name', 'Percentage Allocation']
+    index = pd.Index(range(1, len(top_10_company_names_df)+1))
+    top_10_company_names_df.index = index
+
+    print(top_10_company_names_df)
+    
     # print(type(top_10_company_names))
     top_10_sector_names = sum_percentage_allocation_sector.nlargest(10)
+    top_10_sector_names = pd.DataFrame(top_10_sector_names).reset_index()
+    top_10_sector_names.columns = ['Sector Name', 'Percentage Allocation']
+    index = pd.Index(range(1, len(top_10_sector_names)+1))
+    top_10_sector_names.index = index
+    print(top_10_sector_names)
 
     # Get the top 10 stocks based on frequency of Company Name
     top_10_frequency = filtered_data['Company Name'].value_counts().nlargest(n)
+    top_10_frequency = pd.DataFrame(top_10_frequency).reset_index()
+    top_10_frequency.columns = ['Company Name', 'Number of Mutual Funds holding the Stock']
+    index = pd.Index(range(1, len(top_10_frequency)+1))
+    top_10_frequency.index = index
+    print(top_10_frequency)
 
     # list1, list2,list3 = st.columns(3)
     
@@ -145,7 +169,8 @@ if submit:
         st.table(top_10_sector_names)
 
         st.write('**Top 10 Stocks by Sum of Percentage Allocation**')
-        st.table(top_10_company_names)
+        st.table(top_10_company_names_df)
+
         
         st.write('**Top 10 Stocks by Frequency**')
         st.table(top_10_frequency)

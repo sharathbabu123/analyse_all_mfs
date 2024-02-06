@@ -1,8 +1,10 @@
 from datetime import datetime, timedelta
 
 import pandas as pd
+import st_aggrid
 from mftool import Mftool
 from requests.exceptions import ChunkedEncodingError
+from stqdm import stqdm
 from tqdm import tqdm
 
 
@@ -35,10 +37,10 @@ scheme_types = df['scheme_type'].unique()
 selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', scheme_types)
 # Filter options
 # scheme_types = df['scheme_type'].unique()
-scheme_categories = df[df['scheme_type']==selected_scheme_type]['scheme_category'].unique()
+scheme_categories = ['All'] + df[df['scheme_type']==selected_scheme_type]['scheme_category'].unique().tolist()
 # # Sidebar filters
 # selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', scheme_types)
-selected_scheme_category = st.sidebar.selectbox('Select Scheme Category', scheme_categories)
+selected_scheme_category = st.sidebar.multiselect('Select Scheme Category', scheme_categories)
 
 selected_date = st.sidebar.date_input('Select Date', datetime.now())
 
@@ -54,11 +56,14 @@ submit_button = st.sidebar.button('Submit')
 # Filtered DataFrame
 # filtered_df = df[ (df['scheme_category'] == selected_scheme_category)]
 
-
+if  'All' in selected_scheme_category:
+    filtered_df = df[(df['scheme_name'].str.contains('Direct')) & 
+                 (df['scheme_name'].str.contains('Growth')) &(~df['scheme_name'].str.contains('Bonus Option')) &(~df['scheme_name'].str.contains('IDCW'))& (df['scheme_type']==selected_scheme_type)]
+else:
 # Filtered DataFrame
-filtered_df = df[(df['scheme_category'] == selected_scheme_category) & 
+    filtered_df = df[(df['scheme_category'].isin(selected_scheme_category)) & 
                  (df['scheme_name'].str.contains('Direct')) & 
-                 (df['scheme_name'].str.contains('Growth')) & (df['scheme_type']==selected_scheme_type)]
+                 (df['scheme_name'].str.contains('Growth')) &(~df['scheme_name'].str.contains('Bonus Option')) &(~df['scheme_name'].str.contains('IDCW'))& (df['scheme_type']==selected_scheme_type)]
 
 
 
@@ -91,7 +96,7 @@ cagr__5_year_list=[]
 cagr__10_year_list=[]
 
 if submit_button:
-    for code in tqdm(scheme_codes):
+    for code in stqdm(scheme_codes):
         try:
             mf_nav = mf.get_scheme_historical_nav(code, as_json=True)
             mf_nav = json.loads(mf_nav)
@@ -111,22 +116,22 @@ if submit_button:
             if current_nav is None or one_year_nav is None or one_year_nav == 0:
                 cagr_1_year = None
             else:
-                cagr_1_year = (( current_nav / one_year_nav) ** (1 / 1) - 1) * 100
+                cagr_1_year = round(((current_nav / one_year_nav) ** (1 / 1) - 1) * 100, 2)
             
             if current_nav is None or three_year_nav is None or three_year_nav == 0:
                 cagr_3_year = None
             else:
-                cagr_3_year = (( current_nav / three_year_nav) ** (1 / 3) - 1) * 100
+                cagr_3_year = round((( current_nav / three_year_nav) ** (1 / 3) - 1) * 100,2)
             
             if current_nav is None or five_year_nav is None or five_year_nav == 0:
                 cagr_5_year = None
             else:
-                cagr_5_year = (( current_nav / five_year_nav) ** (1 / 5) - 1) * 100
+                cagr_5_year = round((( current_nav / five_year_nav) ** (1 / 5) - 1) * 100,2)
             
             if current_nav is None or ten_year_nav is None or ten_year_nav == 0:
                 cagr_10_year = None
             else:
-                cagr_10_year = (( current_nav / ten_year_nav) ** (1 / 10) - 1) * 100
+                cagr_10_year = round((( current_nav / ten_year_nav) ** (1 / 10) - 1) * 100,2)
 
 
             cagr__1_year_list.append(cagr_1_year)
@@ -156,7 +161,11 @@ if submit_button:
 
     filtered_df.sort_values(by=sort_factor, ascending=False, inplace=True)
     top_10 = filtered_df.head(10)
-    st.write(top_10[['scheme_name', 'cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year']])
+    # go_builder = st_aggrid.GridOptionsBuilder.from_dataframe(top_10[['scheme_name', 'cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year']])
+    # go_builder.configure_grid_options(alwaysShowHorizontalScroll = True)
+    # go = go_builder.build()
+    # st_aggrid.AgGrid(top_10[['scheme_name', 'cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year']],gridOptions=go, theme='streamlit', height=400)
+    st_aggrid.AgGrid(top_10[['scheme_name', 'cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year']])
     # st.write(top_10)
 
 

@@ -3,3 +3,4 @@ mftool
 tqdm
 st_pages
 streamlit_elements
+st_aggrid

@@ -9,7 +9,7 @@ from stqdm import stqdm
 from tqdm import tqdm
 
 
-@st.cache_data(experimental_allow_widgets=True)
+# @st.cache_data(experimental_allow_widgets=True)
 def compute():
     selected_scheme_category_path = os.path.join(scheme_path, selected_scheme_category)+'.csv'
     df = pd.DataFrame()
@@ -131,7 +131,9 @@ def compute():
             # )
         # st.cache(
         st_aggrid.AgGrid(top_10[['scheme_name', 'cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year']]
-                                ,columns_auto_size_mode=st_aggrid.ColumnsAutoSizeMode.FIT_ALL_COLUMNS_TO_VIEW,key=i,update_mode = st_aggrid.GridUpdateMode.SELECTION_CHANGED, reload_data=True)
+                                ,columns_auto_size_mode=st_aggrid.ColumnsAutoSizeMode.FIT_ALL_COLUMNS_TO_VIEW,key=i,
+                                update_mode = st_aggrid.GridUpdateMode.MODEL_CHANGED, 
+                                 reload_data=True)
             # )
     return "None"
 

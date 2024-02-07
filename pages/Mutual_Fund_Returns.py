@@ -1,3 +1,4 @@
+import json
 from datetime import datetime, timedelta
 
 import pandas as pd
@@ -9,17 +10,24 @@ from stqdm import stqdm
 from tqdm import tqdm
 
 
+def get_dates(date,n_years):
+    return (date - timedelta(days=n_years * 365))
+
 # @st.cache_data(experimental_allow_widgets=True)
 def compute():
-    selected_scheme_category_path = os.path.join(scheme_path, selected_scheme_category)+'.csv'
+    df = pd.DataFrame()
+    current_directory = os.getcwd()
+    selected_scheme_category_path = os.path.join(current_directory,"mf_info",selected_scheme_type, selected_scheme_category)+'.csv'
     df = pd.DataFrame()
     if selected_scheme_category != 'All':
+        # print(selected_scheme_category_path)
         df = pd.read_csv(selected_scheme_category_path)
     else:
-        for file in files:
-            file_path = os.path.join(scheme_path, file)
-            temp_df = pd.read_csv(file_path)
-            df = df.append(temp_df, ignore_index=True)
+        for folder in scheme_types:
+            for file in scheme_dict[folder]:
+                file_path = os.path.join(current_directory,"mf_info",folder, file)+'.csv'
+                temp_df = pd.read_csv(file_path)
+                df = pd.concat([df, temp_df], ignore_index=True)
     
     if selected_scheme_category == 'All':
         filtered_df = df[
@@ -47,11 +55,12 @@ def compute():
 
     current_date = datetime.strptime(selected_date.strftime('%Y-%m-%d'), '%Y-%m-%d')
     filtered_df = filtered_df.sort_values('fund_house').groupby('fund_house').first()
-    print(filtered_df.head())
+    # print(filtered_df.head())
 
 
     scheme_codes = list(filtered_df['scheme_code'].unique())
     for i in range(3):
+        # print("hi")
         cagr__1_year_list=[]
         cagr__3_year_list=[]
         cagr__5_year_list=[]
@@ -59,6 +68,7 @@ def compute():
         current_date_year = get_dates(current_date,i)
         for code in stqdm(scheme_codes):
             try:
+                # print("in for loop")
                 mf_nav = mf.get_scheme_historical_nav(code, as_json=True)
                 mf_nav = json.loads(mf_nav)
                 
@@ -151,8 +161,6 @@ def get_latest_nav(df_data, date):
         date = (datetime.strptime(date, '%d-%m-%Y') - timedelta(days=1)).strftime('%d-%m-%Y')
     return None
 
-def get_dates(date,n_years):
-    return (date - timedelta(days=n_years * 365))
 
 # Initialize mftool
 mf = Mftool()
@@ -167,26 +175,19 @@ st.title('📄 Mutual Fund Returns')
 
 import os
 
-current_directory = os.getcwd()
-folder_path = os.path.join(current_directory, 'mf_info')
-folder_names = [name for name in os.listdir(folder_path) if os.path.isdir(os.path.join(folder_path, name))]
-print(folder_names)
+scheme_dict = {'Debt scheme': ['Debt Scheme - Banking and PSU Fund', 'Debt Scheme - Corporate Bond Fund', 'Debt Scheme - Credit Risk Fund', 'Debt Scheme - Dynamic Bond',
+                                'Debt Scheme - Floater Fund', 'Debt Scheme - Gilt Fund with 10 year constant duration', 'Debt Scheme - Gilt Fund', 'Debt Scheme - Liquid Fund',
+                                  'Debt Scheme - Long Duration Fund', 'Debt Scheme - Low Duration Fund', 'Debt Scheme - Medium Duration Fund', 'Debt Scheme - Medium to Long Duration Fund',
+                                    'Debt Scheme - Money Market Fund', 'Debt Scheme - Overnight Fund', 'Debt Scheme - Short Duration Fund', 'Debt Scheme - Ultra Short Duration Fund'], 'Equity scheme': ['Equity Scheme - Contra Fund', 'Equity Scheme - Dividend Yield Fund', 'Equity Scheme - ELSS', 'Equity Scheme - Large & Mid Cap Fund', 'Equity Scheme - Large Cap Fund', 'Equity Scheme - Mid Cap Fund', 'Equity Scheme - Multi Cap Fund', 'Equity Scheme - Small Cap Fund', 'Equity Scheme - Value Fund'], 'Hybrid scheme': ['Hybrid Scheme - Aggressive Hybrid Fund', 'Hybrid Scheme - Arbitrage Fund', 'Hybrid Scheme - Balanced Hybrid Fund', 'Hybrid Scheme - Conservative Hybrid Fund', 'Hybrid Scheme - Dynamic Asset Allocation or Balanced Advantage', 'Hybrid Scheme - Equity Savings', 'Hybrid Scheme - Multi Asset Allocation'], 'Others': ['1', '1098 Days', '1099 Days', '1100 Days', '1194 DAYS', '54EB Growth', 'Annual Dividend', 'Compulsory Reinvestment', 'Direct', 'ELSS', 'Formerly Known as IIFL Mutual Fund', 'FV Rs 32.161', 'Gilt', 'Growth', 'Half Yearly Dividend', 'IDF', 'Income', 'Merger of Capex & Energy Opportunities', 'Money Market', 'Other Scheme - FoF Domestic', 'Other Scheme - FoF Overseas', 'Other Scheme - Gold ETF', 'Other Scheme - Index Funds', 'Other Scheme - Other  ETFs', 'Solution Oriented Scheme - Children’s Fund', 'Solution Oriented Scheme - Retirement Fund']}
+
+scheme_types = list(scheme_dict.keys())
 
 # Sidebar filters
-selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', folder_names)
+selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', scheme_types)
 
 
+scheme_categories = ['All']+scheme_dict[selected_scheme_type]
 
-# selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', scheme_types)
-# Filter options
-# scheme_types = df['scheme_type'].unique()
-
-
-scheme_path = os.path.join(folder_path, selected_scheme_type)
-files = [name for name in os.listdir(scheme_path) if os.path.isfile(os.path.join(scheme_path, name))]
-
-scheme_categories = ['All'] + [file.replace(".csv","") for file in files]
-# selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', scheme_types)
 selected_scheme_category = st.sidebar.selectbox('Select Scheme Category', scheme_categories)
 
 direct_flag = st.sidebar.checkbox('Direct Flag')
@@ -202,31 +203,6 @@ import streamlit as st
 # Add a submit button
 submit_button = st.sidebar.button('Submit')
 
-
-
-
-# current_date = '31-03-2021'
-# print(type(current_date))
-
-# one_year_end_date = (datetime.now() - timedelta(days=365)).strftime('%d-%m-%Y')
-# three_year_end_date = (datetime.now() - timedelta(days=3 * 365)).strftime('%d-%m-%Y')
-# five_year_end_date = (datetime.now() - timedelta(days=5 * 365)).strftime('%d-%m-%Y')
-# ten_year_end_date = (datetime.now() - timedelta(days=10 * 365)).strftime('%d-%m-%Y')
-# end_date = '31-03-2020'
-# print(one_year_end_date)
-# print(three_year_end_date)
-# print(five_year_end_date)
-# print(ten_year_end_date)
-# (filtered_df).to_csv('filtered_df.csv',index=False)
-
-# mf.get_scheme_historical_nav("119597",as_json=True)
-import json
-
-import pandas as pd
-import streamlit as st
-
-# if "load_state" not in st.session_state:
-#     st.session_state.load_state = False
 
 if submit_button :
 # or st.session_state.load_state:

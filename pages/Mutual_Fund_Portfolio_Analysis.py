@@ -105,7 +105,7 @@ if st.session_state["selected_asset_type"] != "All":
     filtered_data = filtered_data[filtered_data['Asset Type'] == st.session_state.selected_asset_type].copy()
     # filtered_data_sector = filtered_data_sector[filtered_data_sector['Asset Type'] == st.session_state.selected_asset_type].copy()
 
-st.session_state["selected_fund_house"] = st.sidebar.selectbox('Select Found House', ['All']+filtered_data['Fund House'].unique().tolist(), index=(['All']+filtered_data['Fund House'].unique().tolist()).index(st.session_state["selected_fund_house"]))
+st.session_state["selected_fund_house"] = st.sidebar.selectbox('Select Fund House', ['All']+filtered_data['Fund House'].unique().tolist(), index=(['All']+filtered_data['Fund House'].unique().tolist()).index(st.session_state["selected_fund_house"]))
 
 if st.session_state["selected_fund_house"] != "All":
     filtered_data = filtered_data[filtered_data['Fund House'] == st.session_state.selected_fund_house].copy()

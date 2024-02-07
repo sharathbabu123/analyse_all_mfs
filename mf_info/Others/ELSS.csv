@@ -1,0 +1,95 @@
+fund_house,scheme_type,scheme_category,scheme_code,scheme_name
+Bank of India Mutual Fund,Others,ELSS,141950,BANK OF INDIA Mid Cap Tax Fund Series 1 Direct Plan Growth
+Bank of India Mutual Fund,Others,ELSS,141949,BANK OF INDIA Mid Cap Tax Fund Series 1 Direct Plan IDCW
+Bank of India Mutual Fund,Others,ELSS,141952,BANK OF INDIA Mid Cap Tax Fund Series 1 Regular Plan Growth
+Bank of India Mutual Fund,Others,ELSS,141951,BANK OF INDIA Mid Cap Tax Fund Series 1 Regular Plan IDCW
+Bank of India Mutual Fund,Others,ELSS,144315,BANK OF INDIA Midcap Tax Fund Series 2 Direct Plan Growth
+Bank of India Mutual Fund,Others,ELSS,144309,BANK OF INDIA Midcap Tax Fund Series 2 Direct Plan IDCW
+Bank of India Mutual Fund,Others,ELSS,144314,BANK OF INDIA Midcap Tax Fund Series 2 Regular Plan Growth
+Bank of India Mutual Fund,Others,ELSS,144316,BANK OF INDIA Midcap Tax Fund Series 2 Regular Plan IDCW
+ICICI Prudential Mutual Fund,Others,ELSS,142136,ICICI Prudential Long Term Wealth Enhancement Fund - Cumulative Option
+ICICI Prudential Mutual Fund,Others,ELSS,142134,ICICI Prudential Long Term Wealth Enhancement Fund - Direct Plan Cumulative Option
+ICICI Prudential Mutual Fund,Others,ELSS,142133,ICICI Prudential Long Term Wealth Enhancement Fund - Direct Plan IDCW Option
+ICICI Prudential Mutual Fund,Others,ELSS,142135,ICICI Prudential Long Term Wealth Enhancement Fund - IDCW Option
+ICICI Prudential Mutual Fund,Others,ELSS,112101,ICICI Prudential R.I.G.H.T. Fund Dividend
+ICICI Prudential Mutual Fund,Others,ELSS,112100,ICICI Prudential R.I.G.H.T. Fund Growth
+Reliance Mutual Fund,Others,ELSS,107900,Reliance Equity Linked Saving Fund - Series I - Dividend Plan
+Reliance Mutual Fund,Others,ELSS,107901,Reliance Equity Linked Saving Fund - Series I - Growth Plan
+SBI Mutual Fund,Others,ELSS,132933,SBI LONG TERM ADVANTAGE FUND - SERIES I - DIRECT PLAN - GROWTH
+SBI Mutual Fund,Others,ELSS,132934,SBI Long Term Advantage Fund - Series I - Direct Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,132924,SBI LONG TERM ADVANTAGE FUND - SERIES I - REGULAR PLAN - GROWTH
+SBI Mutual Fund,Others,ELSS,132923,SBI Long Term Advantage Fund - Series I - Regular Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,133364,SBI LONG TERM ADVANTAGE FUND - SERIES II - DIRECT PLAN - GROWTH
+SBI Mutual Fund,Others,ELSS,133363,SBI Long Term Advantage Fund - Series II - Direct Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,133361,SBI LONG TERM ADVANTAGE FUND - SERIES II - REGULAR PLAN - GROWTH
+SBI Mutual Fund,Others,ELSS,133362,SBI Long Term Advantage Fund - Series II - Regular Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,136007,SBI Long Term Advantage Fund - Series III - Direct Plan - Growth
+SBI Mutual Fund,Others,ELSS,136006,SBI Long Term Advantage Fund - Series III - Direct Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,136004,SBI Long Term Advantage Fund - Series III - Regular Plan - Growth
+SBI Mutual Fund,Others,ELSS,136005,SBI Long Term Advantage Fund - Series III - Regular Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,140487,SBI Long Term Advantage Fund - Series IV - Direct Plan - Growth
+SBI Mutual Fund,Others,ELSS,140486,SBI Long Term Advantage Fund - Series IV - Direct Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,140488,SBI Long Term Advantage Fund - Series IV - Regular Plan - Growth
+SBI Mutual Fund,Others,ELSS,140489,SBI Long Term Advantage Fund - Series IV - Regular Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,142138,SBI Long Term Advantage Fund - Series V - Direct Plan - Growth
+SBI Mutual Fund,Others,ELSS,142140,SBI Long Term Advantage Fund - Series V - Direct Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,142137,SBI Long Term Advantage Fund - Series V - Regular Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,142139,SBI Long Term Advantage Fund Series V - Regular Plan - Growth
+SBI Mutual Fund,Others,ELSS,143178,SBI Long Term Advantage Fund - Series VI - Direct Plan - Growth
+SBI Mutual Fund,Others,ELSS,143179,SBI Long Term Advantage Fund - Series VI - Direct Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,143176,SBI Long Term Advantage Fund - Series VI - Regular Plan - Growth
+SBI Mutual Fund,Others,ELSS,143177,SBI Long Term Advantage Fund - Series VI - Regular Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,116352,SBI TAX ADVANTAGE FUND - SERIES II - GROWTH
+SBI Mutual Fund,Others,ELSS,116353,SBI Tax Advantage Fund-Series- II - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,126279,SBI Tax Advantage Fund - Series III - Direct Plan - Growth Option
+SBI Mutual Fund,Others,ELSS,126379,SBI Tax Advantage Fund - Series III - Regular Plan - Growth
+SBI Mutual Fund,Others,ELSS,126278,SBI Tax Advantage Fund-Series- III - Direct Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+SBI Mutual Fund,Others,ELSS,126378,SBI Tax Advantage Fund-Series- III - Regular Plan - Income Distribution cum Capital Withdrawal Option (IDCW)
+Sundaram Mutual Fund,Others,ELSS,139711,Sundaram Long Term Micro Cap Tax Advantage Fund Series III Direct Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,139710,Sundaram Long Term Micro Cap Tax Advantage Fund Series III Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,139709,Sundaram Long Term Micro Cap Tax Advantage Fund Series III Regular Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,139712,Sundaram Long Term Micro Cap Tax Advantage Fund Series III Regular Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,139990,Sundaram Long Term Micro Cap Tax Advantage Fund Series IV Direct Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,139989,Sundaram Long Term Micro Cap Tax Advantage Fund Series IV Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,139992,Sundaram Long Term Micro Cap Tax Advantage Fund Series IV Regular Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,139991,Sundaram Long Term Micro Cap Tax Advantage Fund Series IV Regular Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,141564,Sundaram Long Term Micro Cap Tax Advantage Fund Series VI Direct Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,141567,Sundaram Long Term Micro Cap Tax Advantage Fund Series VI Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,141565,Sundaram Long Term Micro Cap Tax Advantage Fund Series VI Regular Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,141566,Sundaram Long Term Micro Cap Tax Advantage Fund Series VI Regular Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,141141,Sundaram Long Term Micro Cap Tax Advantage Fund Series V Direct Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,141142,Sundaram Long Term Micro Cap Tax Advantage Fund Series V Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,141139,Sundaram Long Term Micro Cap Tax Advantage Fund Series V Regular Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,141140,Sundaram Long Term Micro Cap Tax Advantage Fund Series V Regular Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,133324,Sundaram Long Term Tax Advantage Fund Series I Direct Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,133325,Sundaram Long Term Tax Advantage Fund Series I Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,133322,Sundaram Long Term Tax Advantage Fund Series I Regular Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,133323,Sundaram Long Term Tax Advantage Fund Series I Regular Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,142153,Sundaram Long Term Tax Advantage Fund Series III Direct Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,142154,Sundaram Long Term Tax Advantage Fund Series III Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,142151,Sundaram Long Term Tax Advantage Fund Series III Regular Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,142152,Sundaram Long Term Tax Advantage Fund Series III Regular Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,143079,Sundaram Long Term Tax Advantage Fund Series IV Direct Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,143080,Sundaram Long Term Tax Advantage Fund Series IV Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,143077,Sundaram Long Term Tax Advantage Fund Series IV Regular Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,143078,Sundaram Long Term Tax Advantage Fund Series IV Regular Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,135682,Sundaram Long Term Tax Advantage Fund Series II Direct Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,135681,Sundaram Long Term Tax Advantage Fund Series II Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+Sundaram Mutual Fund,Others,ELSS,135684,Sundaram Long Term Tax Advantage Fund Series II Regular Plan - Growth
+Sundaram Mutual Fund,Others,ELSS,135683,Sundaram Long Term Tax Advantage Fund Series II Regular Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW)
+UTI Mutual Fund,Others,ELSS,135962,UTI Long Term Advantage Fund Series III - Direct Plan - Growth Option
+UTI Mutual Fund,Others,ELSS,135965,UTI Long Term Advantage Fund Series III - Direct Plan - IDCW
+UTI Mutual Fund,Others,ELSS,135964,UTI Long Term Advantage Fund Series III - Regular Plan - Growth Option
+UTI Mutual Fund,Others,ELSS,135963,UTI Long Term Advantage Fund Series III - Regular Plan - IDCW
+UTI Mutual Fund,Others,ELSS,140046,UTI Long Term Advantage Fund Series IV - Direct Plan - Growth Option
+UTI Mutual Fund,Others,ELSS,140044,UTI Long Term Advantage Fund Series IV - Direct Plan - IDCW
+UTI Mutual Fund,Others,ELSS,140045,UTI Long Term Advantage Fund Series IV - Regular Plan - Growth Option
+UTI Mutual Fund,Others,ELSS,140043,UTI Long Term Advantage Fund Series IV - Regular Plan - IDCW
+UTI Mutual Fund,Others,ELSS,140454,UTI Long Term Advantage Fund Series V - Direct Plan - Growth Option
+UTI Mutual Fund,Others,ELSS,140457,UTI Long Term Advantage Fund Series V - Direct Plan - IDCW
+UTI Mutual Fund,Others,ELSS,140455,UTI Long Term Advantage Fund Series V - Regular Plan - Growth Option
+UTI Mutual Fund,Others,ELSS,140456,UTI Long Term Advantage Fund Series V - Regular Plan - IDCW
+UTI Mutual Fund,Others,ELSS,141892,UTI Long Term Advantage Fund Series VI - Direct Plan - Growth Option
+UTI Mutual Fund,Others,ELSS,141894,UTI Long Term Advantage Fund Series VI - Direct Plan - IDCW
+UTI Mutual Fund,Others,ELSS,141893,UTI Long Term Advantage Fund Series VI - Regular Plan - Growth Option
+UTI Mutual Fund,Others,ELSS,141891,UTI Long Term Advantage Fund Series VI - Regular Plan - IDCW

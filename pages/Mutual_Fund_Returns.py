@@ -127,7 +127,7 @@ def compute():
         # go = go_builder.build()
         # st_aggrid.AgGrid(top_10[['scheme_name', 'cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year']],gridOptions=go, theme='streamlit', height=400)
         # st.cache(
-        st.subheader(f'Top 10 Mutual Funds in Year {current_date_year.strftime('%Y')} :')
+        st.subheader(f"Top 10 Mutual Funds in Year {current_date_year.strftime('%Y')} :")
             # )
         # st.cache(
         st_aggrid.AgGrid(top_10[['scheme_name', 'cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year']]

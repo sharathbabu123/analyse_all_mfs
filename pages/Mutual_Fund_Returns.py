@@ -52,9 +52,10 @@ def compute():
         filtered_df = filtered_df[filtered_df['scheme_name'].str.contains('Growth')]
 
     # print(len(scheme_codes))
+    temp_filtered_df = filtered_df.copy()
 
     current_date = datetime.strptime(selected_date.strftime('%Y-%m-%d'), '%Y-%m-%d')
-    filtered_df = filtered_df.sort_values('fund_house').groupby('fund_house').first()
+    
     # print(filtered_df.head())
 
 
@@ -124,12 +125,13 @@ def compute():
 
         # ...
         # df.loc[df['scheme_code'] == code, 'cagr'] = cagr
+        filtered_df = temp_filtered_df.copy()
         filtered_df['cagr_1_year'] = cagr__1_year_list
         filtered_df['cagr_3_year'] = cagr__3_year_list
         filtered_df['cagr_5_year'] = cagr__5_year_list
         filtered_df['cagr_10_year'] = cagr__10_year_list
         
-
+        filtered_df = filtered_df.sort_values(by=sort_factor).groupby('fund_house').first()
         filtered_df.sort_values(by=sort_factor, ascending=False, inplace=True)
         top_10 = filtered_df.head(10)
         # go_builder = st_aggrid.GridOptionsBuilder.from_dataframe(top_10[['scheme_name', 'cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year']])

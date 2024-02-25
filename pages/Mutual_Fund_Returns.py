@@ -14,30 +14,38 @@ def get_dates(date,n_years):
     return (date - timedelta(days=n_years * 365))
 
 # @st.cache_data(experimental_allow_widgets=True)
-def compute():
+def compute(word_filter,selected_scheme_type,selected_scheme_category):
     df = pd.DataFrame()
     current_directory = os.getcwd()
-    selected_scheme_category_path = os.path.join(current_directory,"mf_info",selected_scheme_type, selected_scheme_category)+'.csv'
+    
     df = pd.DataFrame()
     if selected_scheme_category != 'All':
         # print(selected_scheme_category_path)
+        selected_scheme_category_path = os.path.join(current_directory,"mf_info",selected_scheme_type, selected_scheme_category)+'.csv'
         df = pd.read_csv(selected_scheme_category_path)
     else:
+        print("in else")
         for folder in scheme_types:
             for file in scheme_dict[folder]:
                 file_path = os.path.join(current_directory,"mf_info",folder, file)+'.csv'
                 temp_df = pd.read_csv(file_path)
                 df = pd.concat([df, temp_df], ignore_index=True)
     
+    # print(df.head())
+
     if selected_scheme_category == 'All':
-        filtered_df = df[
+        if selected_scheme_type == 'All':
+            filtered_df = df
+        else:
+            filtered_df = df[
             # (direct_flag & df['scheme_name'].str.contains('Direct')) & 
             # (growth_flag & df['scheme_name'].str.contains('Growth')) &
             # (~df['scheme_name'].str.contains('Bonus Option')) &
             # (~df['scheme_name'].str.contains('IDCW'))& 
-            (df['scheme_type']==selected_scheme_type)]
+                (df['scheme_type']==selected_scheme_type)]
     else:
     # Filtered DataFrame
+        selected_scheme_type = selected_scheme_category_key
         filtered_df = df[
             (df['scheme_category']==(selected_scheme_category)) & 
             # (direct_flag & df['scheme_name'].str.contains('Direct')) & 
@@ -51,25 +59,35 @@ def compute():
     if growth_flag:
         filtered_df = filtered_df[filtered_df['scheme_name'].str.contains('Growth')]
 
+    if word_filter:
+        word_list = word_filter.split(',')
+        print(word_list)
+        for word in word_list:
+            print(word)
+            print(filtered_df.head())
+            filtered_df = filtered_df[filtered_df['scheme_name'].str.contains(word, case=False)]
+        
     # print(len(scheme_codes))
     temp_filtered_df = filtered_df.copy()
 
     current_date = datetime.strptime(selected_date.strftime('%Y-%m-%d'), '%Y-%m-%d')
     
-    # print(filtered_df.head())
+    print(filtered_df.head())
 
 
     scheme_codes = list(filtered_df['scheme_code'].unique())
+    print(scheme_codes)
     for i in range(3):
-        # print("hi")
+        print("hi")
         cagr__1_year_list=[]
         cagr__3_year_list=[]
         cagr__5_year_list=[]
         cagr__10_year_list=[]
         current_date_year = get_dates(current_date,i)
-        for code in stqdm(scheme_codes):
+        print(current_date_year)
+        for code in (scheme_codes):
             try:
-                # print("in for loop")
+                print("in for loop")
                 mf_nav = mf.get_scheme_historical_nav(code, as_json=True)
                 mf_nav = json.loads(mf_nav)
                 
@@ -111,12 +129,6 @@ def compute():
                 cagr__3_year_list.append(cagr_3_year)
                 cagr__5_year_list.append(cagr_5_year)
                 cagr__10_year_list.append(cagr_10_year)
-
-                # print(current_nav,one_year_nav,cagr_1_year)
-
-                
-
-                
                 
             except ChunkedEncodingError:
                 print(f"Error occurred for code: {code}")
@@ -125,6 +137,7 @@ def compute():
 
         # ...
         # df.loc[df['scheme_code'] == code, 'cagr'] = cagr
+        
         filtered_df = temp_filtered_df.copy()
         filtered_df['cagr_1_year'] = cagr__1_year_list
         filtered_df['cagr_3_year'] = cagr__3_year_list
@@ -134,6 +147,7 @@ def compute():
         filtered_df = filtered_df.sort_values(by=sort_factor).groupby('fund_house').first()
         filtered_df.sort_values(by=sort_factor, ascending=False, inplace=True)
         top_10 = filtered_df.head(10)
+        print(top_10)
         # go_builder = st_aggrid.GridOptionsBuilder.from_dataframe(top_10[['scheme_name', 'cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year']])
         # go_builder.configure_grid_options(alwaysShowHorizontalScroll = True)
         # go = go_builder.build()
@@ -185,12 +199,23 @@ scheme_dict = {'Debt scheme': ['Debt Scheme - Banking and PSU Fund', 'Debt Schem
 scheme_types = list(scheme_dict.keys())
 
 # Sidebar filters
-selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', scheme_types)
+selected_scheme_type = st.sidebar.selectbox('Select Scheme Type', ['All']+scheme_types, index=0)
 
-
-scheme_categories = ['All']+scheme_dict[selected_scheme_type]
+print(scheme_dict.values())
+# l=[]
+# print([i for i in list(scheme_dict.values())])
+if selected_scheme_type == 'All':
+    scheme_categories =  ['All']+[item for sublist in  list(scheme_dict.values()) for item in sublist]
+else:
+    scheme_categories = ['All']+scheme_dict[selected_scheme_type]
 
 selected_scheme_category = st.sidebar.selectbox('Select Scheme Category', scheme_categories)
+
+if selected_scheme_type != 'All':
+    selected_scheme_category_key = selected_scheme_type
+else:
+    selected_scheme_category_key = next((key for key, value in scheme_dict.items() if selected_scheme_category in value), None)
+print(selected_scheme_category_key)
 
 direct_flag = st.sidebar.checkbox('Direct Flag')
 growth_flag = st.sidebar.checkbox('Growth Flag')
@@ -200,8 +225,11 @@ selected_date = st.sidebar.date_input('Select Date', datetime.now())
 
 sort_factor = st.sidebar.selectbox('Sort Factor', ['cagr_1_year', 'cagr_3_year', 'cagr_5_year', 'cagr_10_year'])
 
-import streamlit as st
-
+# import streamlit as st
+# global word_filter
+# word_filter = ''
+word_filter = st.sidebar.text_input('Filter by words (seperated by comma)', value='')
+print(word_filter)
 # Add a submit button
 submit_button = st.sidebar.button('Submit')
 
@@ -211,7 +239,7 @@ if submit_button :
     # st.session_state.load_state = True
     # Filtered DataFrame
     # filtered_df = df[ (df['scheme_category'] == selected_scheme_category)]
-    compute()
+    compute(word_filter,selected_scheme_category_key,selected_scheme_category)
         # st.write(top_10)
 
 
